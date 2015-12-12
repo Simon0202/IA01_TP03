@@ -62,7 +62,29 @@ ROUGE
 ***
 BLANC
 ***
-((Nom) (Prix) (Annee) (Couleur) (Petillant) (Geographie) (Appellation) (Bio) (Note) (Medaille) (Plat) (MomentRepas) (Sepage) (Alcool))
+
+((Nom DOMAINE_HUBERT_LAMY) (Prix 15) (Annee 1998) (Couleur BLANC) (Petillant NON) (Geographie BOURGOGNE) (Appellation SAINT_AUBIN) (Bio NON) (Note 3) (Medaille NON) (Plat) (Garde 0) (Cepage CHARDONNAY PINOT_NOIR))
+
+((Nom RENE_LEQUIN_COLIN) (Prix 50) (Annee 1998) (Couleur BLANC) (Petillant NON) (Geographie BOURGOGNE) (Appellation BATARD_MONTRACHET) (Bio NON) (Note 3) (Medaille NON) (Plat) (Garde 0) (Cepage CHARDONNAY))
+
+((Nom CHATEAU_D_YQUEM) (Prix 75) (Annee 1995) (Couleur BLANC) (Petillant NON) (Geographie BORDELAIS) (Appellation SAUTERNES) (Bio NON) (Note 3) (Medaille OR) (Plat) (Garde 0) (Cepage MUSCADELLE SAUVIGNON SEMILLON))
+
+((Nom CHATEAU_NAIRAC) (Prix 50) (Annee 2005) (Couleur BLANC) (Petillant NON) (Geographie BORDELAIS) (Appellation BARSAC) (Bio NON) (Note 3) (Medaille ARGENT) (Plat) (Garde 0) (Cepage MUSCADELLE SAUVIGNON SEMILLON))
+
+((Nom PIERRE GERBAIS) (Prix 11) (Annee 2000) (Couleur BLANC) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 3) (Medaille NON) (Plat) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR))
+
+((Nom RAPHAEL_ET_GERARD_SALLET) (Prix 8) (Annee 2000) (Couleur BLANC) (Petillant NON) (Geographie BOURGOGNE) (Appellation MACON) (Bio NON) (Note 3) (Medaille NON) (Plat) (Garde 0) (Cepage CHARDONNAY GAMAY_NOIR PINOT_NOIR))
+
+((Nom CANARD_DUCHENE) (Prix 20) (Annee 2003) (Couleur BLANC) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio OUI) (Note 3) (Medaille NON) (Plat APERETIF DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR))
+
+((Nom FLEURY) (Prix 50) (Annee 2009) (Couleur BLANC) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio OUI) (Note 3) (Medaille NON) (Plat VERRE) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR))
+
+
+
+
+
+
+
 
 <<<<<<< HEAD
 =======
