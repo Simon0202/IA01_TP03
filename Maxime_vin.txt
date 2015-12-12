@@ -1,0 +1,14 @@
+Liste des critères
+
+Prix
+Annee
+Plat
+Sepage
+°Alcool
+Couleur
+Petillant
+Geographie
+Note
+Medaille
+Appellation
+Bio
