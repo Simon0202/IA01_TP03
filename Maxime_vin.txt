@@ -25,10 +25,17 @@ ROUGE
 (Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
 
 
+
 ***
 BLANC
 ***
+((Nom) (Prix) (Annee) (Couleur) (Petillant) (Geographie) (Appellation) (Bio) (Note) (Medaille) (Plat) (MomentRepas) (Sepage) (Alcool))
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ba1df0159ee11f95d0358d049f4d93a6d28076a3
 ***
 Rose
 ***
