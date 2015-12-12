@@ -18,6 +18,7 @@ a_liste_vins
 (
 ***
 ROUGE
+((nom vinnom) (prix 150) )
 ***
 (Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
 (Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
@@ -52,8 +53,11 @@ BLANC
 
 
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> ba1df0159ee11f95d0358d049f4d93a6d28076a3
 ***
 Rose
 ***
