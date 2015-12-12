@@ -16,9 +16,24 @@ Bio
 
 a_liste_vins
 (
+***
+ROUGE
+***
 (Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
 (Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
 (Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
+
+
+***
+BLANC
+***
+
+
+
+
+***
+Rose
+***
 .
 .
 )
