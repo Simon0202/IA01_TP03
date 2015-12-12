@@ -24,11 +24,12 @@ ROUGE
 (Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
 
 
+
 ***
 BLANC
 ***
+((Nom) (Prix) (Annee) (Couleur) (Petillant) (Geographie) (Appellation) (Bio) (Note) (Medaille) (Plat) (MomentRepas) (Sepage) (Alcool))
 
-hhjghj
 
 
 ***
@@ -37,4 +38,3 @@ Rose
 .
 .
 )
-je travaile en meme temps
