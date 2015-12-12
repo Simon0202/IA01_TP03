@@ -3,8 +3,9 @@ Liste des critères
 Prix
 Annee
 Plat
+MomentRepas
 Sepage
-°Alcool
+Alcool
 Couleur
 Petillant
 Geographie
@@ -12,3 +13,12 @@ Note
 Medaille
 Appellation
 Bio
+
+a_liste_vins
+(
+(Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
+(Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
+(Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
+.
+.
+)
