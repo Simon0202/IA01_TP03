@@ -103,7 +103,31 @@ ROUGE
 ((Nom EXCELLENCE_IX) (Prix 5) (Annee 2009) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
 (Appellation BLAYE_COTE_DE_BORDEAUX) (Bio NON) (Note 3) (Medaille NON) (Plat VIANDE_ROUGE) (Garde 0) (Cepage CABERNET MERLOT MUSCADELLE COLOMBARD))
 
-((Nom CHATEAU_SAINT_GERMAIN) (Prix 5) (Annee 2011) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX) (Bio NON) (Note 1) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET MALBEC MERLOT ))
+((Nom CHATEAU_SAINT_GERMAIN) (Prix 5) (Annee 2011) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_SUPERIEUR) (Bio NON) (Note 1) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET MALBEC MERLOT ))
+
+((Nom CHATEAU_VIRCOULON) (Prix 5) (Annee 2010) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation SAINT_EMILION) (Bio NON) (Note 0) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET MERLOT MALBEC))
+
+
+((Nom DOMAINE_DE_LA_ROMANEE_CONTI) (Prix 110) (Annee 2010) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation GRANDS_ECHEZEAUX) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE) (Garde 0) (Cepage PINOT_NOIR))
+
+((Nom A_F_GROS) (Prix 100) (Annee 2011) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation CLOS_DE_VOUGEOT) (Bio NON) (Note 1) (Medaille OUI) (Plat AU_VERRE) (Garde 0) (Cepage PINOT_NOIR))
+
+((Nom DOMAINE_PHILIPPE_CHARLOPIN) (Prix 95) (Annee 2011) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation GRANDS_ECHEZEAUX) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE) (Garde 2025) (Cepage PINOT_NOIR))
+
+((Nom DOMAINE_FOLLIN_ARBELET) (Prix 80) (Annee 2001) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation ROMANEE_SAINT_VIVANT) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE) (Garde 0) (Cepage PINOT_NOIR))
+
+((Nom DOMAINE_LOUIS_LATOUR) (Prix 75) (Annee 1997) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation ROMANEE_SAINT_VIVANT) (Bio NON) (Note 1) (Medaille NON) (Plat AU_VERRE) (Garde 0) (Cepage PINOT_NOIR))
+
+((Nom DOMAINE_ROBERT_ARNOUX) (Prix 100) (Annee 2010) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation GRANDS_ECHEZEAUX) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE) (Garde 0) (Cepage PINOT_NOIR))
+
+
 ***
 (Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
 (Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
