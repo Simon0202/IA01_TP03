@@ -18,7 +18,40 @@ a_liste_vins
 (
 ***
 ROUGE
-((nom vinnom) (prix 150) )
+
+((Nom CARRUADES_DE_LAFITE) (Prix 105) (Annee 2009) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation PAUILLAC) (Bio NON) (Note 2) (Medaille NON) (Plat) (Garde 0) (Cepage CABERNET))
+
+((Nom CHATEAU_MARGAUX) (Prix 125) (Annee 2010) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation MARGAUX) (Bio NON) (Note 3) (Medaille OUI) (Plat) (Garde 0) (Cepage CABERNET))
+
+((Nom CHATEAU_LATOUR) (Prix 75) (Annee 2012) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation POMEROL) (Bio NON) (Note 0) (Medaille OUI) (Plat) (Garde 2024) (Cepage CABERNET))
+
+((Nom CHATEAU_AUSONE) (Prix 85) (Annee 1998) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation SAINT_EMILION) (Bio NON) (Note 3) (Medaille NON) (Plat) (Garde 0) (Cepage CABERNET))
+
+((Nom CHATEAU_FIGEAC) (Prix 75) (Annee 1998) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation SAINT_EMILION) (Bio NON) (Note 2) (Medaille NON) (Plat) (Garde 0) (Cepage CABERNET))
+
+((Nom CHATEAU_LYNCH_BAGES) (Prix 65) (Annee 1998) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation SAINT_EMILION) (Bio NON) (Note 3) (Medaille OUI) (Plat) (Garde 0) (Cepage CABERNET))
+
+((Nom CHATEAU_MONBOUSQUET) (Prix 50) (Annee 2005) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation SAINT_EMILION) (Bio NON) (Note 0) (Medaille NON) (Plat) (Garde 0) (Cepage CABERNET))
+
+((Nom CHATEAU_MONTROSE) (Prix 60) (Annee 1998) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation SAINT_ESTEPHE (Bio NON) (Note 2) (Medaille OUI) (Plat) (Garde 0) (Cepage CABERNET))
+
+((Nom CHATEAU_SAINTE_MARIE) (Prix 35) (Annee 1998) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation POMEROL) (Bio NON) (Note 0) (Medaille NON) (Plat) (Garde 0) (Cepage CABERNET))
+
+((Nom CHATEAU_PAPE_CLEMENT) (Prix 40) (Annee 1997) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation PESSAC_LEOGNAN) (Bio NON) (Note 2) (Medaille NON) (Plat) (Garde 0) (Cepage CABERNET))
+
+
+
+
 ***
 (Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
 (Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
@@ -42,3 +75,14 @@ Rose
 .
 .
 )
+****PLAT****
+Poisson : -> GRAS
+		  -> MIS GRAS
+		  -> MAIGRE
+Viande : -> ROUGE
+		 -> BLANC
+		 -> NOIRE
+Apperitif
+Charchuterie
+Au verre
+Dessert
