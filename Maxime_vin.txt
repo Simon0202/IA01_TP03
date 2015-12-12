@@ -85,13 +85,13 @@ BLANC
 Poisson : -> GRAS
 		  -> MIS GRAS
 		  -> MAIGRE
+		  -> FRUITS_DE_MERS
 Viande : -> ROUGE
 		 -> BLANC
 		 -> NOIRE
-Apperitif
-Au verre
-Dessert
-Charchuterie
-Fruit de mers
 Fromage
+Apperitif
+Verre
+Dessert
+
 
