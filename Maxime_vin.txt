@@ -89,9 +89,9 @@ Viande : -> ROUGE
 		 -> BLANC
 		 -> NOIRE
 Apperitif
-Au verre
+Verre
 Dessert
 Charchuterie
-Fruit de mers
+Fruit de mer
 Fromage
 
