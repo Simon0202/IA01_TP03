@@ -20,37 +20,76 @@ a_liste_vins
 ROUGE
 
 ((Nom CARRUADES_DE_LAFITE) (Prix 105) (Annee 2009) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
-(Appellation PAUILLAC) (Bio NON) (Note 2) (Medaille NON) (Plat) (Garde 0) (Cepage CABERNET))
+(Appellation PAUILLAC) (Bio NON) (Note 2) (Medaille NON) (Plat AU_VERRE VIANDE_NOIRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET))
 
 ((Nom CHATEAU_MARGAUX) (Prix 125) (Annee 2010) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
-(Appellation MARGAUX) (Bio NON) (Note 3) (Medaille OUI) (Plat) (Garde 0) (Cepage CABERNET))
+(Appellation MARGAUX) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE APERITIF) (Garde 0) (Cepage CABERNET))
 
 ((Nom CHATEAU_LATOUR) (Prix 75) (Annee 2012) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
-(Appellation POMEROL) (Bio NON) (Note 0) (Medaille OUI) (Plat) (Garde 2024) (Cepage CABERNET))
+(Appellation POMEROL) (Bio NON) (Note 0) (Medaille OUI) (Plat VIANDE_ROUGE VIANDE_NOIRE VIANDE_BLANCHE) (Garde 2024) (Cepage CABERNET))
 
 ((Nom CHATEAU_AUSONE) (Prix 85) (Annee 1998) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
-(Appellation SAINT_EMILION) (Bio NON) (Note 3) (Medaille NON) (Plat) (Garde 0) (Cepage CABERNET))
+(Appellation SAINT_EMILION) (Bio NON) (Note 3) (Medaille NON) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET))
 
 ((Nom CHATEAU_FIGEAC) (Prix 75) (Annee 1998) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
-(Appellation SAINT_EMILION) (Bio NON) (Note 2) (Medaille NON) (Plat) (Garde 0) (Cepage CABERNET))
+(Appellation SAINT_EMILION) (Bio NON) (Note 2) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET))
 
 ((Nom CHATEAU_LYNCH_BAGES) (Prix 65) (Annee 1998) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
-(Appellation SAINT_EMILION) (Bio NON) (Note 3) (Medaille OUI) (Plat) (Garde 0) (Cepage CABERNET))
+(Appellation SAINT_EMILION) (Bio NON) (Note 3) (Medaille OUI) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET))
 
 ((Nom CHATEAU_MONBOUSQUET) (Prix 50) (Annee 2005) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
-(Appellation SAINT_EMILION) (Bio NON) (Note 0) (Medaille NON) (Plat) (Garde 0) (Cepage CABERNET))
+(Appellation SAINT_EMILION) (Bio NON) (Note 0) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_NOIRE VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET MERLOT))
 
 ((Nom CHATEAU_MONTROSE) (Prix 60) (Annee 1998) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
-(Appellation SAINT_ESTEPHE (Bio NON) (Note 2) (Medaille OUI) (Plat) (Garde 0) (Cepage CABERNET))
+(Appellation SAINT_ESTEPHE) (Bio NON) (Note 2) (Medaille OUI) (Plat AU_VERRE VIANDE_NOIRE VIANDE_ROUGE APERITIF) (Garde 0) (Cepage CABERNET))
 
 ((Nom CHATEAU_SAINTE_MARIE) (Prix 35) (Annee 1998) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
-(Appellation POMEROL) (Bio NON) (Note 0) (Medaille NON) (Plat) (Garde 0) (Cepage CABERNET))
+(Appellation POMEROL) (Bio NON) (Note 0) (Medaille NON) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET))
 
 ((Nom CHATEAU_PAPE_CLEMENT) (Prix 40) (Annee 1997) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
-(Appellation PESSAC_LEOGNAN) (Bio NON) (Note 2) (Medaille NON) (Plat) (Garde 0) (Cepage CABERNET))
+(Appellation PESSAC_LEOGNAN) (Bio NON) (Note 2) (Medaille NON) (Plat AU_VERRE  VIANDE_NOIRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET))
 
+((Nom CHATEAU_DE_CHEVALIER) (Prix 35) (Annee 1998) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation PESSAC_LEOGNAN) (Bio NON) (Note 0) (Medaille OUI) (Plat VIANDE_ROUGE VIANDE_NOIRE) (Garde 0) (Cepage CABERNET))
 
+((Nom CHATEAU_LAROSE) (Prix 40) (Annee 1999) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation SAINT_JULIEN) (Bio NON) (Note 1) (Medaille OUI) (Plat VIANDE_ROUGE) (Garde 0) (Cepage CABERNET))
 
+((Nom CLOS_PUY_ARNAUD) (Prix 35) (Annee 2010) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation CASTILLON) (Bio OUI) (Note 1) (Medaille NON) (Plat VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET))
+
+((Nom CHATEAU_LE_CHEMIN) (Prix 30) (Annee 2009) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation POMEROL) (Bio NON) (Note 0) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_BLANCHE APERITIF) (Garde 0) (Cepage CABERNET MERLOT))
+
+((Nom VIEUX_CHATEAU_FERRON) (Prix 25) (Annee 1997) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation POMEROL) (Bio NON) (Note 1) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_BLANCHE APERITIF) (Garde 0) (Cepage CABERNET MERLOT))
+
+((Nom CLOS_LOUIE) (Prix 20) (Annee 2004) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation CASTILLON) (Bio NON) (Note 2) (Medaille NON) (Plat VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET MERLOT))
+
+((Nom CHATEAU_CHAUVIN) (Prix 20) (Annee 2004) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation SAINT_EMILION) (Bio NON) (Note 0) (Medaille OUI) (Plat VIANDE_ROUGE VIANDE_BLANCHE APERITIF) (Garde 0) (Cepage CABERNET))
+
+((Nom CHATEAU_PETIT_GRAVET_AINE) (Prix 25) (Annee 2002) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation SAINT_EMILION) (Bio NON) (Note 3) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_BLANCHE APERITIF) (Garde 0) (Cepage CABERNET MERLOT))
+
+((Nom CHATEAU_SIRAN) (Prix 30) (Annee 2001) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation MARGAUX) (Bio NON) (Note 0) (Medaille NON) (Plat VIANDE_ROUGE) (Garde 0) (Cepage CABERNET))
+
+((Nom CHATEAU_LES_TROIS_CROIX) (Prix 20) (Annee 2005) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation FRONSAC) (Bio NON) (Note 2) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_NOIRE) (Garde 0) (Cepage CABERNET))
+
+((Nom CHATEAU_TOURNEFEUILLE) (Prix 15) (Annee 2005) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation LALANDE_DE_POMEROL) (Bio NON) (Note 0) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_NOIRE) (Garde 0) (Cepage CABERNET))
+
+((Nom CHATEAU_LESTAGE) (Prix 20) (Annee 2012) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation MONTAGNE_SAINT_EMILION) (Bio NON) (Note 0) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET))
+
+((Nom CHATEAU_CITRAN) (Prix 20) (Annee 2000) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation MONTAGNE_SAINT_EMILION) (Bio NON) (Note 3) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_BLANCHE VIANDE NOIRE APERITIF DESSERT ) (Garde 0) (Cepage CABERNET MERLOT))
+
+((Nom CHATEAU_LESTAGE) (Prix 15) (Annee 2007) (Couleur ROUGE) (Petillant NON) (Geographie BORDELAIS) 
+(Appellation SAINT_EMILION) (Bio NON) (Note 1) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_BLANCHE APERITIF) (Garde 0) (Cepage CABERNET MERLOT))
 
 ***
 (Nom Prix Annee Couleur Petillant Geographie Appellation Bio Note Medaille (Plat) (MomentRepas) (Sepage) (Alcool))
