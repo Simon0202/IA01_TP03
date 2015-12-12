@@ -120,6 +120,17 @@ BLANC
 
 ((Nom CHATEAU_HAUT_BRION) (Prix 100) (Annee 2009) (Couleur BLANC) (Petillant NON) (Geographie BORDELAIS) (Appellation PESSAC_LEOGNAN) (Bio NON) (Note 3) (Medaille NON) (Plat POISSON_FRUITS_DE_MER POISSON_MAIGRE POISSON_MI_MAIGRE POISSON_GRAS) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON COT MALBEC MERLOT MUSCADELLE PETIT_VERDOT SAUVIGNON SEMILLON))
 
+((Nom DOMAINE_DENIS_PERE_ET_FILS) (Prix 5) (Annee 1998) (Couleur BLANC) (Petillant NON) (Geographie BOURGOGNE) (Appellation BOURGOGNE_ALIGOTE) (Bio NON) (Note 0) (Medaille NON) (Plat POISSON_MAIGRE) (Garde 0) (Cepage ALIGOTE))
+
+((Nom CHATEAU_FILHOT) (Prix 20) (Annee 1997) (Couleur BLANC) (Petillant NON) (Geographie BORDELAIS) (Appellation SAUTERNES) (Bio NON) (Note 0) (Medaille NON) (Plat APERETIF DESSERT VIANDE_BLANCHE FROMAGE) (Garde 0) (Cepage MUSCADELLE SAUVIGNON SEMILLON))
+
+((Nom BONNET_PONSON) (Prix 11) (Annee 1995) (Couleur BLANC) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 0) (Medaille NON) (Plat VIANDE_BLANCHE DESSERT APERETIF) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR))
+
+((Nom DOMAINE_DE_LA_VOUGERAIE) (Prix 20) (Annee 2010) (Couleur BLANC) (Petillant NON) (Geographie CHARDONNAY PINOT_NOIR) (Appellation BEAUNE) (Bio OUI) (Note 0) (Medaille NON) (Plat AU_VERRE) (Garde 0) (Cepage ALIGOTE))
+
+((Nom DOMAINE_DENIS_PERE_ET_FILS) (Prix 5) (Annee 1998) (Couleur BLANC) (Petillant NON) (Geographie BOURGOGNE) (Appellation BOURGOGNE_ALIGOTE) (Bio NON) (Note 0) (Medaille NON) (Plat POISSON_MAIGRE) (Garde 0) (Cepage ALIGOTE))
+
+((Nom DOMAINE ARNOUX_PERE_ET_FILS) (Prix 8) (Annee 1998) (Couleur BLANC) (Petillant NON) (Geographie BOURGOGNE) (Appellation MONTAGNY) (Bio NON) (Note 0) (Medaille NON) (Plat POISSON_MAIGRE) (Garde 0) (Cepage CHARDONNAY))
 
 
 )
