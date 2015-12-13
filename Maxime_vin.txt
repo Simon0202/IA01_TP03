@@ -274,8 +274,7 @@ a_liste_vins
 ((Nom DANIEL_MOREAU) (Prix 10) (Annee 1999) (Couleur ROUGE) (Petillant NON) (Geographie CHAMPAGNE) 
 (Appellation COTEAUX_CHAMPENOIS) (Bio NON) (Note 3) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIR CHARDONNAY MEUNIER))
 
-((Nom FROMENTIN_LECLAPART) (Prix 15) (Annee 2009) (Couleur ROUGE) (Petillant NON) (Geographie CHAMPAGNE) 
-(Appellation COTEAUX_CHAMPENOIS) (Bio NON) (Note 2) (Medaille OUI) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIR CHARDONNAY MEUNIER))
+((Nom FROMENTIN_LECLAPART) (Prix 15) (Annee 2009) (Couleur ROUGE) (Petillant NON) (Geographie CHAMPAGNE) (Appellation COTEAUX_CHAMPENOIS) (Bio NON) (Note 2) (Medaille OUI) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIR CHARDONNAY MEUNIER))
 
 ((Nom BRICE) (Prix 25) (Annee 2012) (Couleur ROUGE) (Petillant NON) (Geographie CHAMPAGNE) 
 (Appellation COTEAUX_CHAMPENOIS) (Bio NON) (Note 0) (Medaille OUI) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIR CHARDONNAY MEUNIER))
