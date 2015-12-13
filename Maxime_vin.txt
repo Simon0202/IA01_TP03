@@ -130,15 +130,103 @@ ROUGE
 (Appellation BONNES_MARES) (Bio NON) (Note 1) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIR))
 
 ((Nom DOMAINE_PONSOT) (Prix 60) (Annee 1997) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
-(Appellation GRIOTTE_CHAMBERTIN) (Bio NON) (Note 1) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIR))
-
-(Appellation ROMANEE_SAINT_VIVANT) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE) (Garde 0) (Cepage PINOT_NOIRE))
+(Appellation GRIOTTE_CHAMBERTIN) (Bio NON) (Note 1) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIR))(Appellation ROMANEE_SAINT_VIVANT) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE) (Garde 0) (Cepage PINOT_NOIRE))
 
 ((Nom DOMAINE_LOUIS_LATOUR) (Prix 75) (Annee 1997) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
-(Appellation ROMANEE_SAINT_VIVANT) (Bio NON) (Note 1) (Medaille NON) (Plat AU_VERRE) (Garde 0) (Cepage PINOT_NOIRE))
+(Appellation ROMANEE_SAINT_VIVANT) (Bio NON) (Note 1) (Medaille NON) (Plat AU_VERRE VIANDE_ROUGE) (Garde 0) (Cepage PINOT_NOIRE))
 
-((Nom DOMAINE_ROBERT_ARNOUX) (Prix 100) (Annee 2010) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
-(Appellation GRANDS_ECHEZEAUX) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE) (Garde 0) (Cepage PINOT_NOIRE))
+((Nom DOMAINE_ROBERT_ARNOUX) (Prix 60) (Annee 2010) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation GRANDS_ECHEZEAUX) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE) (Garde 0) (Cepage PINOT_NOIRE))
+
+((Nom DOMAINE_DE_LA_VOUGERAIE) (Prix 55) (Annee 2008) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation CHARMES_CHAMBERTIN) (Bio OUI) (Note 0) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE) (Garde 0) (Cepage PINOT_NOIRE))
+
+
+((Nom DOMAINE_RENE_BOUVIER) (Prix 60) (Annee 2008) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation CHARMES_CHAMBERTIN) (Bio NON) (Note 1) (Medaille OUI) (Plat AU_VERRE) (Garde 0) (Cepage PINOT_NOIRE))
+
+((Nom DOMAINE_TRAPET_PERE_ET_FILS) (Prix 40) (Annee 1998) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation CHAPELLE_CHAMBERTIN) (Bio NON) (Note 2) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE))
+
+((Nom DOMAINE_TAUPENOT_MERME) (Prix 35) (Annee 2004) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation MOREY_SAINT_DENIS) (Bio NON) (Note 0) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE CHARDONNAY))
+
+((Nom DOMAINE_DES_PERDRIS) (Prix 40) (Annee ÉÀÀ()) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation NUITS_SAINT_GEORGE) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE CHARDONNAY))
+
+((Nom DOMAINE_LEJEUNE) (Prix 35) (Annee 2010) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation POMMARD) (Bio NON) (Note 2) (Medaille OUI) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE))
+
+((Nom DOMAINE_PIERRE_GELIN) (Prix 30) (Annee 2002) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation GEVREY_CHAMBERTIN) (Bio NON) (Note 2) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE))
+
+((Nom CHATEAU_POMMARD) (Prix 30) (Annee 2012) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation NUITS_SAINT_GEORGE) (Bio NON) (Note 0) (Medaille NON) (VIANDE_ROUGE VIANDE_BLANCHE) (Garde 2022) (Cepage PINOT_NOIRE CHARDONNAY))
+
+((Nom CAPITAIN_GAGNEROT) (Prix 30) (Annee 2006) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation CORTON) (Bio NON) (Note 0) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 2019) (Cepage PINOT_NOIRE))
+
+((Nom DOMAINE_PHILIPPE_CHARLOPIN_PARIZOT) (Prix 25) (Annee 2012) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation MARSANNAY) (Bio NON) (Note 2) (Medaille OUI) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE CHARDONNAY PINOT_BLANC))
+
+((Nom MOILLARD) (Prix 25) (Annee 2007) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation POMMARD) (Bio NON) (Note 0) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_NOIRE) (Garde 0) (Cepage PINOT_NOIRE))
+
+((Nom DOMINIQUE_MUGNERET) (Prix 20) (Annee 2003) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation NUITS_SAINT_GEORGE) (Bio NON) (Note 2) (Medaille OUI) (Plat VIANDE_NOIRE) (Garde 0) (Cepage PINOT_NOIRE CHARDONNAY))
+
+((Nom DOMAINE_JEROME_GALEYRAN) (Prix 25) (Annee 2005) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation GEVREY_CHAMBERTIN) (Bio NON) (Note 2) (Medaille OUI) (Plat VIANDE_BLANCHE VIANDE_NOIRE) (Garde 0) (Cepage PINOT_NOIRE))
+
+((Nom DOMAINE_BACHEY_LEGROS) (Prix 30) (Annee 2012) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation SANTENAY) (Bio OUI) (Note 0) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 2025) (Cepage PINOT_NOIRE CHARDONNAY))
+
+((Nom DOMAINE_EDMOND_CORNU_ET_FILS) (Prix 25) (Annee 1997) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation CORTON) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE CHARDONNAY))
+
+((Nom JEAN_CLAUDE_BOISSET) (Prix 30) (Annee 2006) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation CHAMBOLLE_MUSIGNY) (Bio NON) (Note 3) (Medaille OUI) (Plat VIANDE_BLANCHE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE))
+
+((Nom DOMAINE_DUPONT_TISSERAND) (Prix 30) (Annee 2000) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation GEVREY_CHAMBERTIN) (Bio NON) (Note 2) (Medaille OUI) (Plat VIANDE_NOIRE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE))
+
+((Nom DOMAINE_LALEURE_PIOT) (Prix 30) (Annee 1999) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation CORTON) (Bio NON) (Note 1) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE CHARDONNAY))
+
+((Nom FRANÇOIS_PARENT) (Prix 25) (Annee 2005) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation MONTHELIE) (Bio NON) (Note 1) (Medaille NON) (Plat VIANDE_NOIRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE CHARDONNAY))
+
+((Nom DOMAINE_GILLE) (Prix 20) (Annee 2009) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation NUITS_SAINT_GEORGE) (Bio NON) (Note 1) (Medaille NON) (Plat VIANDE_NOIRE) (Garde 0) (Cepage PINOT_NOIRE CHARDONNAY))
+
+((Nom CHRISTIAN_MENAUT) (Prix 15) (Annee 2005) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation POMMARD) (Bio NON) (Note 1) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE))
+
+((Nom ERIC_BOIGELOT) (Prix 20) (Annee 2005) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation VOLNAY) (Bio NON) (Note 1) (Medaille OUI) (Plat VIANDE_NOIRE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE))
+
+((Nom HENRI_ET_GILLES_REMORIQUET) (Prix 20) (Annee 2000) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation NUITS_SAINT_GEORGE) (Bio NON) (Note 3) (Medaille OUI) (Plat VIANDE_NOIRE) (Garde 0) (Cepage PINOT_NOIRE CHARONNAY))
+
+((Nom FRANCOIS_RAQUILLET) (Prix 20) (Annee 2007) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation MERCUREY) (Bio NON) (Note 3) (Medaille OUI) (Plat VIANDE_NOIRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE CHARDONNAY))
+
+((Nom PIERRE_MOREY) (Prix 15) (Annee 2009) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation MONTHELIE) (Bio OUI) (Note 1) (Medaille NON) (Plat VIANDE_NOIRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIRE CHARDONNAY))
+
+((Nom CHATEAUDE_PREMEAUX) (Prix 15) (Annee 2012) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation NUITS_SAINT_GEORGE) (Bio OUI) (Note 0) (Medaille NON) (Plat VIANDE_NOIRE) (Garde 2021) (Cepage PINOT_NOIRE CHARDONNAY))
+
+((Nom VINCENT_BACHELET) (Prix 20) (Annee 2013) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation CHASSAGNE_MONTRACHET) (Bio NON) (Note 0) (Medaille NON) (Plat VIANDE_ROUGE VIANDE_BLANCHE) (Garde 2021) (Cepage PINOT_NOIRE))
+
+((Nom CHAUVENET_CHOPIN) (Prix 15) (Annee 2003) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation NUITS_SAINT_GEORGE) (Bio NON) (Note 1) (Medaille NON) (Plat VIANDE_NOIRE) (Garde 0) (Cepage PINOT_NOIRE CHARDONNAY))
+
+
+
+
+
 
 
 ***
