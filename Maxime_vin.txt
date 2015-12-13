@@ -370,9 +370,113 @@ Bio
 //ROSE
 //****
 
+((Nom LOUIS_BOUILLOT) (Prix 5) (Annee 2013) (Couleur ROSE) (Petillant OUI) (Geographie BOURGOGNE) (Appellation CREMANT_DE_BOURGOGNE) (Bio NON) (Note 3) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ALIGOTE CHARDONNAY GAMMAY_NOIR MELON_DE_BOURGOGNE PINOT_BLANC PINOT_NOIR)
 
+((Nom MOET_ET_CHANDON) (Prix 75) (Annee 1990) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 3) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
 
+((Nom KRUG) (Prix 75) (Annee 2005) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 3) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom CHRISTIAN_SENEZ) (Prix 15) (Annee 1998) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 3) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom LEGOUGE_COPIN) (Prix 20) (Annee 2013) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 3) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom SALMON) (Prix 15) (Annee 2008) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 3) (Medaille NON) (Plat APERITIF POISSON_GRAS DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom BAILLY_LAPIERRE) (Prix 5) (Annee 2000) (Couleur ROSE) (Petillant OUI) (Geographie BOURGOGNE) (Appellation CREMANT_DE_BOURGOGNE) (Bio NON) (Note 3) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ALIGOTE CHARDONNAY GAMAY_NOIR MELON_DE_BOURGOGNE PINOT_BLANC PINOT_GRIS PINOT_NOIR)
+
+((Nom DENIS_PATOUX) (Prix 15) (Annee 2003) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 3) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom VARNIER_FANNIERE) (Prix 15) (Annee 2004) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 3) (Medaille OR) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
 )
+
+((Nom FLEURY) (Prix 30) (Annee 2009) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio OUI) (Note 2) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom KRUG) (Prix 75) (Annee 2005) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 3) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom HERBERT_BEAUFORT) (Prix 15) (Annee 2002) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 2) (Medaille ARGENT) (Plat POISSON_GRAS DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom E_DESAUTEZ_ET_FILS) (Prix 15) (Annee 2006) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 2) (Medaille BRONZE) (Plat APERITIF) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom LOCRET_LACHAUD) (Prix 11) (Annee 2001) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 2) (Medaille OR) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom DOMAINE_DE_BELLEVILLE) (Prix 15) (Annee 2003) (Couleur ROSE) (Petillant OUI) (Geographie BOURGOGNE) (Appellation CREMANT_DE_BOURGOGNE) (Bio NON) (Note 2) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ALIGOTE CHARDONNAY GAMAY_NOIR MELON_DE_BOURGOGNE PINOT_BLANC PINOT_GRIS PINOT_NOIR)
+
+((Nom DOMAINE_DENIZOT) (Prix 8) (Annee 2000) (Couleur ROSE) (Petillant OUI) (Geographie BOURGOGNE) (Appellation CREMANT_DE_BOURGOGNE) (Bio NON) (Note 2) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ALIGOTE CHARDONNAY GAMAY_NOIR MELON_DE_BOURGOGNE PINOT_BLANC PINOT_GRIS PINOT_NOIR)
+
+((Nom CHATEAU_DE_MARSANNAY) (Prix 5) (Annee 1995) (Couleur ROSE) (Petillant NON) (Geographie BOURGOGNE) (Appellation MARSANNAY) (Bio NON) (Note 2) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage CHARDONNAY PINOT_BLANC PINOT_NOIR)
+
+((Nom CHATEAU_MOUSSEYRON) (Prix 2) (Annee 1999) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_ROSE) (Bio NON) (Note 2) (Medaille NON) (Plat VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom DOMAINE_DE_LA_CROIX) (Prix 2) (Annee 2000) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_ROSE) (Bio NON) (Note 2) (Medaille NON) (Plat VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom CHATEAU_VIEUXX_CARREFOUR) (Prix 2) (Annee 2000) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_ROSE) (Bio NON) (Note 2) (Medaille NON) (Plat VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom CHATEAU_DUCLA) (Prix 2) (Annee 2001) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_ROSE) (Bio NON) (Note 2) (Medaille NON) (Plat VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom CHATEAU_PENIN) (Prix 2) (Annee 2002) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_CLAIRET) (Bio NON) (Note 2) (Medaille NON) (Plat VIANDE_BLANCHE VIANDE_ROUGE POISSON_FRUITS_DE_MER POISSON_GRAS) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom DOMAINE_VENOT) (Prix 2) (Annee 2010) (Couleur ROSE) (Petillant NON) (Geographie BOURGOGNE) (Appellation BOURGOGNE_COTE_CHALONNAISE) (Bio NON) (Note 1) (Medaille NON) (Plat AU_VERRE APERITIF) (Garde 0) (Cepage CHARDONNAY PINOT_NOIR)
+
+((Nom FRANCK_CHALMEAU) (Prix 2) (Annee 2003) (Couleur ROSE) (Petillant NON) (Geographie BOURGOGNE) (Appellation BOURGOGNE_PASSETOUTGRAIN) (Bio NON) (Note 1) (Medaille NON) (Plat AU_VERRE) (Garde 0) (Cepage GAMAY_NOIR PINOT_NOIR)
+
+((Nom DOM_RUINART) (Prix 75) (Annee 1990) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 1) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom BRUNO_MICHEL) (Prix 20) (Annee 2010) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio OUI) (Note 1) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+
+((Nom EUSTACHE_DESCHAMPS) (Prix 11) (Annee 1999) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 1) (Medaille OR) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom FRANCOIS_SECONDE) (Prix 11) (Annee 1997) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 1) (Medaille BRONZE) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom MAURICE_PHILIPPART) (Prix 11) (Annee 2000) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 1) (Medaille OR) (Plat APERITIF) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom CHATEAU_MOULIN_DE_PEYRONIN) (Prix 5) (Annee 2011) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_CLAIRET) (Bio OUI) (Note 1) (Medaille NON) (Plat POISSON_FRUITS_DE_MER POISSON_GRAS VIANDE_BLANCHE VIANDE_ROUGE) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom CHATEAU_CAJUS) (Prix 5) (Annee 2009) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_CLAIRET) (Bio OUI) (Note 1) (Medaille NON) (Plat POISSON_FRUITS_DE_MER POISSON_GRAS VIANDE_BLANCHE VIANDE_ROUGE) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom VIGNOBLES_LOUIS_MARINIER) (Prix 5) (Annee 2010) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_ROSE) (Bio OUI) (Note 1) (Medaille NON) (Plat POISSON_GRAS VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom CHATEAU_PENIN) (Prix 5) (Annee 1999) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_ROSE) (Bio NON) (Note 1) (Medaille NON) (Plat POISSON_GRAS VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom CHATEAU_GABARON) (Prix 2) (Annee 1999) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_ROSE) (Bio OUI) (Note 1) (Medaille NON) (Plat POISSON_GRAS VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom CELLIER_DE_BORDES) (Prix 2) (Annee 1999) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_ROSE) (Bio NON) (Note 1) (Medaille NON) (Plat POISSON_GRAS VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom MICHEL_LORAIN) (Prix 5) (Annee 1998) (Couleur ROSE) (Petillant NON) (Geographie BOURGOGNE) (Appellation BOURGOGNE) (Bio NON) (Note 1) (Medaille NON) (Plat POISSON_MI_GRAS VIANDE_ROUGE) (Garde 0) (Cepage CHARDONNAY PINOT_NOIR)
+
+((Nom DOMAINE_DU_VIEUX_COLLEGE) (Prix 5) (Annee 1998) (Couleur ROSE) (Petillant NON) (Geographie BOURGOGNE) (Appellation MARSANNAY) (Bio NON) (Note 1) (Medaille NON) (Plat AU_VERRE) (Garde 0) (Cepage CHARDONNAY PINOT_BLANC PINOT_NOIR)
+
+((Nom ALAIN_VIGNOT) (Prix 5) (Annee 2008) (Couleur ROSE) (Petillant NON) (Geographie BOURGOGNE) (Appellation BOURGOGNE) (Bio NON) (Note 1) (Medaille NON) (Plat VIANDE_ROUGE) (Garde 0) (Cepage CHARDONNAY PINOT_NOIR)
+
+((Nom JEAN_MICHEL_MOREAU) (Prix 2) (Annee 2005) (Couleur ROSE) (Petillant NON) (Geographie BOURGOGNE) (Appellation BOURGOGNE) (Bio NON) (Note 1) (Medaille NON) (Plat VIANDE_ROUGE) (Garde 0) (Cepage CHARDONNAY PINOT_NOIR)
+
+((Nom LOUIS_PICAMELOT) (Prix 5) (Annee 2004) (Couleur ROSE) (Petillant OUI) (Geographie BOURGOGNE) (Appellation CREMANT_DE_BOURGOGNE) (Bio NON) (Note 1) (Medaille NON) (Plat VIANDE_ROUGE) (Garde 0) (Cepage ALIGOTE CHARDONNAY GAMAY_NOIR MELON_DE_BOURGOGNE PINOT_BLANC PINOT_GRIS PINOT_NOIR)
+
+((Nom CHATEAU_DE_LA_VIEILLE_TOUR) (Prix 5) (Annee 1999) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_ROSE) (Bio NON) (Note 0) (Medaille NON) (Plat VIANDE_BLANCHE) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom GRANDES_VERSANNES) (Prix 2) (Annee 2001) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_ROSE) (Bio NON) (Note 0) (Medaille NON) (Plat APERITIF) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom CHATEAU_MONTGAILLARD) (Prix 2) (Annee 2002) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_ROSE) (Bio NON) (Note 0) (Medaille NON) (Plat VIANDE_BLANCHE POISSON_GRAS) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom JOLY_RIVAGE) (Prix 2) (Annee 2002) (Couleur ROSE) (Petillant NON) (Geographie BORDELAIS) (Appellation BORDEAUX_CLAIRET) (Bio NON) (Note 0) (Medaille NON) (Plat VIANDE_BLANCHE VIANDE_ROUGE POISSON_FRUITS_DE_MER POISSON_GRAS POISSON_MI_GRAS) (Garde 0) (Cepage CABERNET_FRANC CABERNET_SAUVIGNON MERLOT)
+
+((Nom FRANCK_CHALMEAU) (Prix 2) (Annee 1999) (Couleur ROSE) (Petillant NON) (Geographie BOURGOGNE) (Appellation BOURGOGNE) (Bio NON) (Note 0) (Medaille NON) (Plat VIANDE_ROUGE) (Garde 0) (Cepage CHARDONNAY PINOT_NOIR)
+
+((Nom MICHEL_LORAIN) (Prix 8) (Annee 2007) (Couleur ROSE) (Petillant NON) (Geographie BOURGOGNE) (Appellation BOURGOGNE) (Bio NON) (Note 0) (Medaille NON) (Plat POISSON_MI_GRAS VIANDE_ROUGE) (Garde 0) (Cepage CHARDONNAY PINOT_NOIR)
+
+((Nom PAUL_CHOLLET) (Prix 8) (Annee 2002) (Couleur ROSE) (Petillant OUI) (Geographie BOURGOGNE) (Appellation CREMANT_DE_BOURGOGNE) (Bio NON) (Note 0) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ALIGOTE CHARDONNAY GAMAY_NOIR MELON_DE_BOURGOGNE PINOT_BLANC PINOT_GRIS PINOT_NOIR)
+
+((Nom MARC_BROCOT) (Prix 5) (Annee 2007) (Couleur ROSE) (Petillant NON) (Geographie BOURGOGNE) (Appellation MARSANNAY) (Bio NON) (Note 0) (Medaille NON) (Plat POISSON_MAIGRE) (Garde 0) (Cepage CHARDONNAY PINOT_BLANC PINOT_NOIR)
+
+((Nom FRANCK_PASCAL) (Prix 30) (Annee 2006) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio OUI) (Note 0) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom BERTRAND_JOREZ) (Prix 11) (Annee 2001) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 0) (Medaille OR) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+((Nom COMTE_DE_NOIRON) (Prix 11) (Annee 1997) (Couleur ROSE) (Petillant OUI) (Geographie CHAMPAGNE) (Appellation CHAMPAGNE) (Bio NON) (Note 0) (Medaille NON) (Plat DESSERT) (Garde 0) (Cepage ARBANE CHARDONNAY MEUNIER PETIT_MESLIER PINOT_MEUNIER PINOT_NOIR)
+
+
+
+
 //fin de la *a_liste_vins*
 
 /*
