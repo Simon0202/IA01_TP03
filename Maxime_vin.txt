@@ -118,8 +118,27 @@ ROUGE
 ((Nom DOMAINE_PHILIPPE_CHARLOPIN) (Prix 95) (Annee 2011) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
 (Appellation GRANDS_ECHEZEAUX) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE) (Garde 2025) (Cepage PINOT_NOIRE))
 
-((Nom DOMAINE_FOLLIN_ARBELET) (Prix 80) (Annee 2001) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+((Nom DOMAINE_FOLLIN_ARBELET) (Prix 80) (Annee 2001) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) (Appellation ROMANEE_SAINT_VIVANT) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIR))
 
+((Nom DOMAINE_LOUIS_LATOUR) (Prix 75) (Annee 1997) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation ROMANEE_SAINT_VIVANT) (Bio NON) (Note 1) (Medaille NON) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIR))
+
+((Nom DOMAINE_ROBERT_ARNOUX) (Prix 100) (Annee 2001) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation ROMANNE_SAINT_VIVANT) (Bio NON) (Note 1) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIR))
+
+((Nom FREDERIC_MAGNIEN) (Prix 80) (Annee 2003) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation BONNES_MARES) (Bio NON) (Note 1) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIR))
+
+((Nom DOMAINE_PONSOT) (Prix 60) (Annee 1997) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation GRIOTTE_CHAMBERTIN) (Bio NON) (Note 1) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIR))
+
+(Appellation ROMANEE_SAINT_VIVANT) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE) (Garde 0) (Cepage PINOT_NOIRE))
+
+((Nom DOMAINE_LOUIS_LATOUR) (Prix 75) (Annee 1997) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation ROMANEE_SAINT_VIVANT) (Bio NON) (Note 1) (Medaille NON) (Plat AU_VERRE) (Garde 0) (Cepage PINOT_NOIRE))
+
+((Nom DOMAINE_ROBERT_ARNOUX) (Prix 100) (Annee 2010) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+(Appellation GRANDS_ECHEZEAUX) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE) (Garde 0) (Cepage PINOT_NOIRE))
 
 
 ***
