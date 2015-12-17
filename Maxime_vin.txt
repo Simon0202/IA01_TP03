@@ -13,7 +13,35 @@ Appellation
 Bio
 
 *a_liste_vins*
-(
+
+*******************************************************
+
+				IMPLEMENTATION EN CLOS
+
+*******************************************************
+
+(setq *BF* NIL)
+
+(defclass $vin ()
+(($nom :accessor ?nom :initarg :nom)
+($prix :accessor ?prix :initarg :prix :type int)
+ ($annee :accessor ?annee :initarg :annee :type int)
+ ($couleur :accessor ?couleur :initarg :couleur)
+ ($petillant :accessor ?petillant :initarg :petillant :type bool)
+ ($geographie :accessor ?geographie :initarg :geographie)
+ ($appellation :accessor ?appellation :initarg :appellation)
+ ($bio :accessor ?bio :initarg :bio :type bool)
+ ($note :accessor ?note :initarg :note :type int)
+ ($medaille :accessor ?medaille :initarg :medaille :type bool)
+ ($plat :accessor ?plat :initarg :plat)
+ ($garde :accessor ?garde :initarg :garde :type int)
+ ($cepage :accessor ?cepage :initarg :cepage))
+
+)
+
+
+
+(setq vin1 (make-instance '$vin :nom "CARRUADES_DE_LAFITE" :prix 105 :annee 2009 :couleur "ROUGE" :petillant NIL :geographie "BORDELAIS" :appellation "PAUILLAC" :bio NIL :note 2 :medaille NIL :plat "VIANDE_ROUGE":garde 0 :cepage "CABERNET"))
 
 //**********************
 //        ROUGE (94)
@@ -151,7 +179,7 @@ Bio
 ((Nom DOMAINE_TAUPENOT_MERME) (Prix 35) (Annee 2004) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
 (Appellation MOREY_SAINT_DENIS) (Bio NON) (Note 0) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIR CHARDONNAY))
 
-((Nom DOMAINE_DES_PERDRIS) (Prix 40) (Annee ÉÀÀ()) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
+((Nom DOMAINE_DES_PERDRIS) (Prix 40) (Annee 2005) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
 (Appellation NUITS_SAINT_GEORGE) (Bio NON) (Note 3) (Medaille OUI) (Plat AU_VERRE VIANDE_ROUGE VIANDE_BLANCHE) (Garde 0) (Cepage PINOT_NOIR CHARDONNAY))
 
 ((Nom DOMAINE_LEJEUNE) (Prix 35) (Annee 2010) (Couleur ROUGE) (Petillant NON) (Geographie BOURGOGNE) 
