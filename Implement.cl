@@ -290,10 +290,10 @@
     (print "Note du Vin" )
     (print "Choisissez une note:(0/1/2/3)")
       (cond
-        (= (read) 0) (push (list 'bio (read)) *BF*)
-        (= (read) 1) (push list 'bio (read) *BF*)
-        (= (read) 2)  (push list 'bio (read) *BF*)
-        (= (read) 3) (push list 'bio (read) *BF*)
+        ((= (read) 0) (push (list 'note (read)) *BF*))
+        ((= (read) 1) (push list 'note (read) *BF*))
+        ((= (read) 2)  (push list 'note (read) *BF*))
+        ((= (read) 3) (push list 'note (read) *BF*))
       )
     )
     ;La note est déjà renseigné
