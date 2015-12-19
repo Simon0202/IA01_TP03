@@ -299,7 +299,7 @@
     ;La note est déjà renseigné
     (progn 
       (let ((NoteOK NIL)) 
-        (if (= (cadr C) (cadr (assoc 'note *BF*))) 
+        (if (= (cadr C) (cadr (assoc 'note *BF*)))
           (setq NoteOK T)
         )
         NoteOK
