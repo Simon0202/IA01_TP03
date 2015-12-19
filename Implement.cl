@@ -282,10 +282,6 @@
 )
 
 
-<<<<<<< HEAD
-
-
-
 (defun AskNote (C)
   (if (not (assoc 'note *BF*))
     (progn
@@ -310,7 +306,6 @@
   )
 )
 
-=======
->>>>>>> 52f501cc2185b720470d945740681356ebef3519
+
     
 
