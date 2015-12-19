@@ -139,9 +139,9 @@
       (loop for C in Conditions while (equal flag T) do
         (if (null (Verifier C)) (setq flag NIL))
       )
-      (print flag))
-      ;(if (equal flag T) (addVin (cadr  R))))
+      (if (equal flag T) (addVin (cadr  R))))
     )
+)
 
 (defun addVin (vin)
 (push vin *BF*)
@@ -160,7 +160,7 @@
     ((equal (car C) 'bio) (AskBio C)) ;Done
     ((equal (car C) 'note) (AskNote C)) ;Done
     ((equal (car C) 'medaille) (AskMedaille C));Done
-    ;((equal (car C) 'garde) (AskGarde C))
+    ((equal (car C) 'garde) (AskGarde C))
     (T)
 ))
 
@@ -327,12 +327,11 @@
     ;Medaille est déjà renseigné
     (progn 
        (let ((MedailleOK NIL)) 
-        (if (equal (cadr C) (cadr (assoc 'medaille *BF*))) 
+        (if (equal (cadr C) (cadr (assoc 'medaille *BF*)))
           (setq MedailleOK T)
         )
         MedailleOK
         )
-      
       )
     )
   )
