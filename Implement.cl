@@ -131,7 +131,9 @@
   (setq *Resultat* NIL)
 	(InitBF) ; Initialisation de la base de faits
 	(loop for R in *BR* do (CheckR (eval R))
-))
+)
+  (Affichage *Resultat*)
+)
 
 
 (defun CheckR (R)
@@ -393,49 +395,26 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+(defun Affichage(result)
+  (loop for NameVinRes in result do
+    (loop for vin in list_wine do
+      (if (equal NameVinRes (?nom vin))
+        (progn
+          (format t "Nom du Vin: ~a" (?nom vin))
+          (format t "~%Caractéristiques:~%Prix:~a"(?prix vin))
+          (format t " Annee:~a"(?annee vin))
+          (format t " Note:~a"(?note vin))
+          (format t " Couleur:~a"(?couleur vin))
+          (format t " Petillant:~a"(?petillant vin))
+          (format t " Geographie:~a"(?geographie vin))
+          (format t " Appellation:~a"(?appellation vin))
+          (format t " Bio:~a"(?bio vin))
+          (format t " Medaille:~a"(?medaille vin))
+          (format t " Garde:~a"(?garde vin))
+          (format t " Cepage:~a~%"(?cepage vin))
+          (format t "Plat en accord: ~a~%~%" (?plat vin))
+        )
+      )
+    )
+  )
+) 
