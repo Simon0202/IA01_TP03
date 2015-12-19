@@ -1,4 +1,4 @@
-#set fileencoding=utf-8 :
+"""#set fileencoding=utf-8 :
 
 
 #Ouverture des fichiers d'écriture et de lecture
@@ -137,7 +137,7 @@ for i in range (1,177):
 destination.write(') )')
 destination.close
 
-
+"""
 
 
 
