@@ -1,8 +1,5 @@
-*************************************
+   ; INITIALISATION BASE DE RÉGLES
 
-    INITIALISATION BASE DE RÉGLES
-
-*************************************
 
 
 (defclass $vin ()
@@ -101,15 +98,15 @@
 
     (print "Rouge ?:")
     (if (eq (read) 'oui) 
-    	(push 'ROUGE *BF*))
+    	(push (list  'couleur 'ROUGE) *BF*))
 
 	(print "Blanc ?:")
     (if (eq (read) 'oui) 
-    	(push 'BLANC *BF*))
+    	(push (list 'couleur 'BLANC) *BF*))
 
     (print "Rosé ?:")
     (if (eq (read) 'oui) 
-    	(push 'ROSE *BF*))
+    	(push (list 'couleur 'ROSE) *BF*))
 
     (print "Concernant la provenance du Vin:")
     (print "Le vin peut il provenir de (Répondez par oui ou non) :")
@@ -117,15 +114,15 @@
 
     (print "Bourgogne ?:")
     (if (eq (read) 'oui) 
-    	(push 'BOURGOGNE *BF*))
+    	(push (list 'geographie 'BOURGOGNE) *BF*))
 
 	(print "Bordeaux ?:")
     (if (eq (read) 'oui) 
-    	(push 'BORDELAIS *BF*))
+    	(push (list 'geographie 'BORDELAIS) *BF*))
 
     (print "Champagne ?:")
     (if (eq (read) 'oui) 
-    	(push 'CHAMPAGNE *BF*))
+    	(push (list 'geographie 'CHAMPAGNE) *BF*))
   
 )
 
@@ -134,5 +131,74 @@
 	(loop for R in *BR* do (CheckR R))
 
 	)
+(defun CheckR (R)
+  (if (not (member (cadr R) *BF*))
+    (let ((flag T) (Conditions ((car R) )))
+      (loop for C in Conditions while (equal verif T) do
+      (if (null (Verifier C)) (setq verif NIL)))
 
+      (if (equal verif T) (addVin ((car R))))
+    )
+  )
+)
+
+(defun addVin (vin)
+(push vin *BF*)
+)
+;Selon le type de la condition :
+; -> Vérifie si cette derniére n'a pas déja été renseignée
+;       -> Si ce n'est pas le cas , demande à l'utilisateur des informations
+; La derniére condition est a T : dans un premier temps on ne demande pas le cépage, ni l'appellation
+;Si le nombre de résulat au final >20, on redemandera ces 2 informations
+
+(defun Verifier (C)
+(cond 
+    ((equal (car C) 'prix) (AskPrice C))
+    ((equal (car C) 'annee) (AskMillesime C))
+    ((equal (car C) 'petillant) (AskPetillant C))
+    ((equal (car C) 'bio) (AskBio C))
+    ((equal (car C) 'note) (AskNote C))
+    ((equal (car C) 'medaille) (AskMedaille C))
+    ((equal (car C) 'garde) (AskGarde C))
+    (T)
+))
+
+; *                                                                           *
+;  *                                                                           *
+;   * Enrichissement de la base de faits par interaction avec l'utilisateur     *
+;    *                                                                           *
+
+(defun AskPrice (C)
+  (if (not (or (assoc 'prix *BF*) (assoc 'prixMin *BF* )))
+    (progn
+(print "Renseignement sur le prix" )
+(print "Souhaitez vous un prix précis (trés réstrictif) plûtot qu'une fourchette ?:(oui/non)")
+      (if (eq (read) 'oui) 
+        (progn
+          (print "Quel prix (€) ?:")
+          (push (list 'prix (read)) *BF*)
+          (AskPrice C)
+          )
+        (progn
+          (print "Quel prix Minimum (€) ?:")
+          (push (list 'prixMin (read)) *BF*)
+          (print "Quel prix Maximum (€) ?:")
+          (push (list 'prixMax (read)) *BF*)
+          (AskPrice C)
+          )
+        )
+    )
+  ;Le/Les prix on déja été renseignés, on vérifie avec la condition
+  (progn 
+    (let ( (PriceOK ))
+    (if (assoc 'prix *BF*)
+        (progn (if (= (cadr C) (cadr (assoc 'prix *BF*))) (setq PriceOK T) (setq PriceOK NIL))
+        )
+        (progn (if (AND (<= (cadr C) (cadr (assoc 'prix *BF*))) (<= (cadr C) (cadr (assoc 'prix *BF*))))
+                (setq PriceOK T) (setq PriceOK NIL))))
+    PriceOK)
+    )
+  )
+)
+    
 
