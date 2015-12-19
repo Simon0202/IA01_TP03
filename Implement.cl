@@ -153,7 +153,7 @@
 
 (defun Verifier (C)
 (cond 
-    ((equal (car C) 'prix) (AskPrice C))
+    ((equal (car C) 'prix) (AskPrice C)) ;Done
     ((equal (car C) 'annee) (AskMillesime C))
     ((equal (car C) 'petillant) (AskPetillant C))
     ((equal (car C) 'bio) (AskBio C))
@@ -190,12 +190,45 @@
     )
   ;Le/Les prix on déja été renseignés, on vérifie avec la condition
   (progn 
-    (let ( (PriceOK ))
+    (let ( (PriceOK NIL))
     (if (assoc 'prix *BF*)
-        (progn (if (= (cadr C) (cadr (assoc 'prix *BF*))) (setq PriceOK T) (setq PriceOK NIL))
+        (progn (if (= (cadr C) (cadr (assoc 'prix *BF*))) (setq PriceOK T))
         )
         (progn (if (AND (<= (cadr C) (cadr (assoc 'prix *BF*))) (<= (cadr C) (cadr (assoc 'prix *BF*))))
-                (setq PriceOK T) (setq PriceOK NIL))))
+                (setq PriceOK T))))
+    PriceOK)
+    )
+  )
+)
+
+(defun AskMillesime (C)
+  (if (not (or (assoc 'annee *BF*) (assoc 'anneeMin *BF* )))
+    (progn
+(print "Renseignement sur l'annee" )
+(print "Souhaitez vous une année précis (trés réstrictif) plûtot qu'une fourchette ?:(oui/non)")
+      (if (eq (read) 'oui) 
+        (progn
+          (print "Quelle année (format YYYY) ?:")
+          (push (list 'annee(read)) *BF*)
+          (AskMillesime C)
+          )
+        (progn
+          (print "Quelle année Minimum (YYYY) ?:")
+          (push (list 'anneeMin (read)) *BF*)
+          (print "Quel année Maximum (YYYY) ?:")
+          (push (list 'anneeMax (read)) *BF*)
+          (AskMillesime C)
+          )
+        )
+    )
+  ;Le/Les année(s) on déja été renseignés, on vérifie avec la condition
+  (progn 
+    (let ( YearOK NIL))
+    (if (assoc 'prix *BF*)
+        (progn (if (= (cadr C) (cadr (assoc 'annee *BF*))) (setq YearOK T))
+        )
+        (progn (if (AND (<= (cadr C) (cadr (assoc 'prix *BF*))) (<= (cadr C) (cadr (assoc 'prix *BF*))))
+                (setq PriceOK T))))
     PriceOK)
     )
   )
