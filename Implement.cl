@@ -385,25 +385,6 @@
       )
 ) 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (defun Affichage(result)
   (loop for NameVinRes in result do
     (loop for vin in list_wine do
