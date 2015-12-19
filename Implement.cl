@@ -209,7 +209,7 @@
       (if (eq (read) 'oui) 
         (progn
           (print "Quelle année (format YYYY) ?:")
-          (push (list 'annee(read)) *BF*)
+          (push (list 'annee (read)) *BF*)
           (AskMillesime C)
           )
         (progn
@@ -313,6 +313,7 @@
   )
 )
 
+<<<<<<< HEAD
 (defun AskMedaille (C)
   (if (not (assoc 'medaille *BF*))
     (progn
@@ -335,3 +336,62 @@
       )
     )
   )
+=======
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(defun AskGarde (C)
+  (if (not (assoc 'garde *BF*))
+    (progn
+    (print "Garde du vin" )
+    (print "Voulez vous un vin de garde?:(non, tapez 0/ oui, tapez 1)")
+    (if 
+      (= (read) 0) (push (list 'garde (read)) *BF*)
+      (push (list 'garde (read)) *BF*)
+    )
+    (AskGarde C)
+    )
+    ;La garde est déjà renseigné
+    (progn 
+      (let ((GardeOk NIL)) 
+        (if (= (cadr C) (cadr (assoc 'garde *BF*)))
+
+          (setq GardeOk T)
+        )
+        GardeOk
+      ) 
+    )
+  )
+)
+>>>>>>> 8c97af4acf8b713f254d4481464fc0197bc24a8c
