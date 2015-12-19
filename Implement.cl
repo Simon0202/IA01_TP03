@@ -243,10 +243,26 @@
 
 	(print "Blanc ?:")
     (if (eq (read) 'oui) 
-    	(progn (setq BF (cons 'BLANC BF))
+    	(setq BF (cons 'BLANC BF)))
 
     (print "Rosé ?:")
     (if (eq (read) 'oui) 
-    	(progn (setq BF (cons 'ROSE BF))
+    	(setq BF (cons 'ROSE BF)))
+
+    (print "Concernant la provenance du Vin:")
+    (print "Le vin peut il provenir DENIS_PATOUX (Répondez par oui ou non) :")
+
+
+    (print "Bourgogne ?:")
+    (if (eq (read) 'oui) 
+    	(setq BF (cons 'BOURGOGNE BF)))
+
+	(print "Bordeaux ?:")
+    (if (eq (read) 'oui) 
+    	(setq BF (cons 'BORDELAIS BF)))
+
+    (print "Champagne ?:")
+    (if (eq (read) 'oui) 
+    	(setq BF (cons 'CHAMPAGNE BF)))
   
 )
