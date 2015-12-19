@@ -234,6 +234,7 @@
   )
 )
 
+
 (defun AskPetillant (C)
   (if (not (assoc 'petillant *BF*))
     (progn
@@ -257,6 +258,7 @@
     )
   )
 )
+
 
 (defun AskBio (C)
   (if (not (assoc 'bio *BF*))
