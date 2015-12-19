@@ -342,7 +342,7 @@
     (progn
     (print "Garde du vin" )
     (print "Voulez vous un vin de garde?:(non, tapez 0/ oui, tapez 1)")
-    (if (equal (read) 'non) (push (list 'garde "NON") *BF*)
+    (if (= (read) 0) (push (list 'garde "NON") *BF*)
       (push (list 'garde "OUI")*BF*)
     )
     (AskGarde C)
