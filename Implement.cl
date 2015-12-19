@@ -257,5 +257,31 @@
 
 
 
+
+
+(defun AskNote (C)
+  (if (not (assoc 'note *BF*))
+    (progn
+    (print "Note du Vin" )
+    (print "Choisissez une note:(0/1/2/3)")
+      (cond
+        (= (read) 0) (push (list 'bio (read)) *BF*)
+        (= (read) 1) (push list 'bio (read) *BF*)
+        (= (read) 2)  (push list 'bio (read) *BF*)
+        (= (read) 3) (push list 'bio (read) *BF*)
+      )
+    )
+    ;La note est déjà renseigné
+    (progn 
+      (let ((NoteOK NIL)) 
+        (if (= (cadr C) (cadr (assoc 'note *BF*))) 
+          (setq NoteOK T)
+        )
+        NoteOK
+      ) 
+    )
+  )
+)
+
     
 
