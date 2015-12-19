@@ -102,4 +102,19 @@ for ligne in src:
 destination.close()
  
 # Fermerture du fichier source
+
 source.close()
+
+"""
+********************
+Ecriture des listes 
+********************
+"""
+destination = open("liste.txt", "w")
+
+destination.write('(setq list_wine (list ')
+
+for i in range (1,177):
+    destination.write('vin%d ' %i)
+    
+destination.close
