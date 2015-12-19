@@ -129,16 +129,18 @@
 
 (defun TrouveVin()
 	(InitBF) ; Initialisation de la base de faits
-	(loop for R in *BR* do (CheckR (eval R)))
-	)
+	(loop for R in *BR* do (CheckR (eval R))
+))
+
 
 (defun CheckR (R)
   (if (not (member (cadr R) *BF*))
-    (let ((flag T) (Conditions (car (eval R))))
+    (let ((flag T) (Conditions (car R)))
       (loop for C in Conditions while (equal flag T) do
-      (if (null (Verifier C)) (setq flag NIL)))
+        (if (null (Verifier C)) (setq flag NIL))
+      )
 
-      (if (equal flag T) (addVin ((cadr (eval R)))))
+      (if (equal flag T) (addVin (cadr  R))))
     )
   )
 )  
