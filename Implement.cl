@@ -161,7 +161,10 @@
     ((equal (car C) 'bio) (AskBio C)) ;Done
     ((equal (car C) 'note) (AskNote C)) ;Done
     ((equal (car C) 'medaille) (AskMedaille C));Done
-    ((equal (car C) 'garde) (AskGarde C))
+    ((equal (car C) 'garde) (AskGarde C));Done
+    ((equal (car C) 'couleur) (VerfiCouleur C))
+    ((equal (car C) 'geographie ) (VerifGeographie C))
+
     (T)
 ))
 
@@ -359,5 +362,71 @@
     )
   )
 )
+
+(defun VerifCouleur (C)
+      (let ((CouleurOk NIL) (listeCouleur)) 
+        (if (equal (cadr C) (cadr (assoc 'garde *BF*)))
+
+          (setq GardeOk T)
+        )
+        GardeOk
+      ) 
+    )
+  )
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
