@@ -157,7 +157,7 @@
     ((equal (car C) 'annee) (AskMillesime C))
     ((equal (car C) 'petillant) (AskPetillant C))
     ((equal (car C) 'bio) (AskBio C)) ;Done
-    ((equal (car C) 'note) (AskNote C))
+    ((equal (car C) 'note) (AskNote C)) ;Done
     ((equal (car C) 'medaille) (AskMedaille C))
     ((equal (car C) 'garde) (AskGarde C))
     (T)
