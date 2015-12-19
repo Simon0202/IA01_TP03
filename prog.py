@@ -106,9 +106,9 @@ destination.close()
 source.close()
 
 """
-********************
-Ecriture des listes 
-********************
+**************************
+Ecriture des listes/Régles 
+**************************
 """
 destination = open("liste.txt", "w")
 
@@ -118,3 +118,29 @@ for i in range (1,177):
     destination.write('vin%d ' %i)
     
 destination.close
+-------------------------------------
+
+destination = open("liste.txt", "w")
+
+for i in range (1,177):
+   destination.write('(setq R%d (list (list(list \'prix (?prix vin%d))(list \'annee (?annee vin%d))(list \'couleur (?couleur vin%d))(list \'petillant (?petillant vin%d))(list \'geographie (?geographie vin%d))(list \'appellation (?appellation vin%d))(list \'bio (?bio vin%d))(list \'note (?note vin%d))(list \'medaille (?medaille vin%d))(list \'garde (?garde vin%d))(list \'cepage (?cepage vin%d)))(?nom vin%d)))' %(i,i,i,i,i,i,i,i,i,i,i,i,i))
+   destination.write('\n')
+destination.close
+
+-----------------------------------
+destination = open("liste.txt", "w")
+
+destination.write('(setq *BR* \'(')
+
+for i in range (1,177):
+    destination.write('R%d ' %i)
+destination.write(') )')
+destination.close
+
+
+
+
+
+
+
+
