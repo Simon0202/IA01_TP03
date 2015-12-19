@@ -16,6 +16,7 @@
  ($plat :accessor ?plat :initarg :plat)
  ($garde :accessor ?garde :initarg :garde :type int)
  ($cepage :accessor ?cepage :initarg :cepage))
+)
  
 ;Voir data.txt
 
@@ -129,15 +130,15 @@
 (defun TrouveVin()
 	(InitBF) ; Initialisation de la base de faits
 	(loop for R in *BR* do (CheckR R))
-
 	)
-(defun CheckR (R)
-  (if (not (member (cadr R) *BF*))
-    (let ((flag T) (Conditions ((car R) )))
-      (loop for C in Conditions while (equal verif T) do
-      (if (null (Verifier C)) (setq verif NIL)))
 
-      (if (equal verif T) (addVin ((car R))))
+(defun CheckR (R)
+  (if (not (member (cadr (eval R)) *BF*))
+    (let ((flag T) (Conditions (car (eval R))))
+      (loop for C in Conditions while (equal flag T) do
+      (if (null (Verifier C)) (setq flag NIL)))
+
+      (if (equal flag T) (addVin ((cadr (eval R)))))
     )
   )
 )
@@ -232,7 +233,6 @@
     YearOK)
     )
   )
-)
 
 
 (defun AskPetillant (C)
@@ -313,7 +313,6 @@
   )
 )
 
-<<<<<<< HEAD
 (defun AskMedaille (C)
   (if (not (assoc 'medaille *BF*))
     (progn
@@ -336,56 +335,21 @@
       )
     )
   )
-=======
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 (defun AskGarde (C)
   (if (not (assoc 'garde *BF*))
     (progn
     (print "Garde du vin" )
     (print "Voulez vous un vin de garde?:(non, tapez 0/ oui, tapez 1)")
-    (if 
-      (= (read) 0) (push (list 'garde (read)) *BF*)
-      (push (list 'garde (read)) *BF*)
+    (if (equal (read) 'non) (push (list 'garde "NON") *BF*)
+      (push (list 'garde "OUI")*BF*)
     )
     (AskGarde C)
     )
     ;La garde est déjà renseigné
     (progn 
       (let ((GardeOk NIL)) 
-        (if (= (cadr C) (cadr (assoc 'garde *BF*)))
+        (if (equal (cadr C) (cadr (assoc 'garde *BF*)))
 
           (setq GardeOk T)
         )
@@ -394,4 +358,5 @@
     )
   )
 )
->>>>>>> 8c97af4acf8b713f254d4481464fc0197bc24a8c
+
+
