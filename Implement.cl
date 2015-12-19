@@ -139,11 +139,10 @@
       (loop for C in Conditions while (equal flag T) do
         (if (null (Verifier C)) (setq flag NIL))
       )
-
-      (if (equal flag T) (addVin (cadr  R))))
+      (print flag))
+      ;(if (equal flag T) (addVin (cadr  R))))
     )
   )
-)  
 
 
 (defun addVin (vin)
@@ -163,7 +162,7 @@
     ((equal (car C) 'bio) (AskBio C)) ;Done
     ((equal (car C) 'note) (AskNote C)) ;Done
     ((equal (car C) 'medaille) (AskMedaille C));Done
-    ((equal (car C) 'garde) (AskGarde C))
+    ;((equal (car C) 'garde) (AskGarde C))
     (T)
 ))
 
@@ -229,7 +228,7 @@
   ;Le/Les année(s) on déja été renseignés, on vérifie avec la condition
   (progn 
     (let ((YearOK NIL))
-    (if (assoc 'prix *BF*)
+    (if (assoc 'annee *BF*)
         (progn (if (= (cadr C) (cadr (assoc 'annee *BF*))) (setq YearOK T))
         )
         (progn (if (AND (<= (cadr C) (cadr (assoc 'anneeMax *BF*))) (>= (cadr C) (cadr (assoc 'anneeMin *BF*))))
@@ -330,7 +329,7 @@
     ;Medaille est déjà renseigné
     (progn 
        (let ((MedailleOK NIL)) 
-        (if (equal (cadr C) (cadr (assoc 'bio *BF*))) 
+        (if (equal (cadr C) (cadr (assoc 'medaille *BF*))) 
           (setq MedailleOK T)
         )
         MedailleOK
