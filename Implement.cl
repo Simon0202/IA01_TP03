@@ -287,15 +287,20 @@
 (defun AskNote (C)
   (if (not (assoc 'note *BF*))
     (progn
+    (let ((entree 0))
     (print "Note du Vin" )
     (print "Choisissez une note:(0/1/2/3)")
+    (setq entree (read))
       (cond
-        ((= (read) 0) (push (list 'note (read)) *BF*))
-        ((= (read) 1) (push list 'note (read) *BF*))
-        ((= (read) 2)  (push list 'note (read) *BF*))
-        ((= (read) 3) (push list 'note (read) *BF*))
+        ((= entree 0) (push (list 'note entree) *BF*))
+        ((= entree 1) (push (list 'note entree) *BF*))
+        ((= entree 2) (push (list 'note entree) *BF*))
+        ((= entree 3) (push (list 'note entree) *BF*))
       )
     )
+    (AskNote C)
+    )
+
     ;La note est déjà renseigné
     (progn 
       (let ((NoteOK NIL)) 
