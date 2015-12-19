@@ -91,39 +91,44 @@
 (defun InitBF ()
 
 	(setq *BF* NIL) ;Initialisation a NIL de notre base de faits
+  (let ((listeCouleur NIL)) 
 
-	;Demande de la couleur du vin a l'utilisateur
-
+  	;Demande de la couleur du vin a l'utilisateur
 	(print "Précision sur la/les couleur(s) du vin recherché(s) :")
 	(print "Le vin peut il être (Répondez par oui ou non) :")
 
     (print "Rouge ?:")
     (if (eq (read) 'oui) 
-    	(push (list  'couleur 'ROUGE) *BF*))
+    	(push "ROUGE" listeCouleur))
 
 	(print "Blanc ?:")
     (if (eq (read) 'oui) 
-    	(push (list 'couleur 'BLANC) *BF*))
+    	(push "BLANC" listeCouleur))
 
     (print "Rosé ?:")
     (if (eq (read) 'oui) 
-    	(push (list 'couleur 'ROSE) *BF*))
+    	(push "ROSE" listeCouleur))
 
+    (push (cons 'couleur listeCouleur) *BF*))
+
+   (let ((listeGeographie NIL))
     (print "Concernant la provenance du Vin:")
     (print "Le vin peut il provenir de (Répondez par oui ou non) :")
 
 
     (print "Bourgogne ?:")
     (if (eq (read) 'oui) 
-    	(push (list 'geographie 'BOURGOGNE) *BF*))
+    	(push "BOURGOGNE" listeGeographie))
 
 	(print "Bordeaux ?:")
     (if (eq (read) 'oui) 
-    	(push (list 'geographie 'BORDELAIS) *BF*))
+    	(push "BORDELAIS" listeGeographie))
 
     (print "Champagne ?:")
     (if (eq (read) 'oui) 
-    	(push (list 'geographie 'CHAMPAGNE) *BF*))
+    	(push "CHAMPAGNE" listeGeographie))
+
+     (push (cons 'geographie listeGeographie) *BF*))
   
 )
 
@@ -162,8 +167,8 @@
     ((equal (car C) 'note) (AskNote C)) ;Done
     ((equal (car C) 'medaille) (AskMedaille C));Done
     ((equal (car C) 'garde) (AskGarde C));Done
-    ((equal (car C) 'couleur) (VerfiCouleur C))
-    ((equal (car C) 'geographie ) (VerifGeographie C))
+    ((equal (car C) 'couleur) (VerfiCouleur C));Done
+    ((equal (car C) 'geographie ) (VerifGeographie C));Done
 
     (T)
 ))
@@ -364,16 +369,20 @@
 )
 
 (defun VerifCouleur (C)
-      (let ((CouleurOk NIL) (listeCouleur)) 
-        (if (equal (cadr C) (cadr (assoc 'garde *BF*)))
+      (let ((CouleurOk NIL) (listeCouleur (cdr (assoc 'couleur *BF*))) )
+        (if (member (cadr C) listeCouleur)(setq CouleurOk T))
 
-          (setq GardeOk T)
-        )
-        GardeOk
-      ) 
-    )
-  )
-)
+        CouleurOk
+      )
+) 
+(defun VerifGeographie (C)
+      (let ((GeographieOk NIL) (listeGeographie (cdr (assoc 'geographie *BF*))) )
+        (if (member (cadr C) listeGeographie)(setq GeographieOk T))
+
+        GeographieOk
+      )
+) 
+
 
 
 
