@@ -142,7 +142,6 @@
 
       (if (equal flag T) (addVin (cadr  R))))
     )
-  )
 )  
 
 
@@ -330,7 +329,7 @@
     ;Medaille est déjà renseigné
     (progn 
        (let ((MedailleOK NIL)) 
-        (if (equal (cadr C) (cadr (assoc 'bio *BF*))) 
+        (if (equal (cadr C) (cadr (assoc 'medaille *BF*))) 
           (setq MedailleOK T)
         )
         MedailleOK
