@@ -136,7 +136,7 @@
   (if (not (member (cadr (eval R)) *BF*))
     (let ((flag T) (Conditions (car (eval R))))
       (loop for C in Conditions while (equal flag T) do
-      (if (null (Verifier C)) (setq flag NIL)))
+      (if (null (Verifier C)) (setq flag NIL))
 
       (if (equal flag T) (addVin ((cadr (eval R)))))
     )
@@ -195,12 +195,13 @@
     (if (assoc 'prix *BF*)
         (progn (if (= (cadr C) (cadr (assoc 'prix *BF*))) (setq PriceOK T))
         )
-        (progn (if (AND (<= (cadr C) (cadr (assoc 'prix *BF*))) (<= (cadr C) (cadr (assoc 'prix *BF*))))
+        (progn (if (AND (<= (cadr C) (cadr (assoc 'prixMax *BF*))) (>= (cadr C) (cadr (assoc 'prixMin *BF*))))
                 (setq PriceOK T))))
     PriceOK)
     )
-  )
 )
+)
+
 
 (defun AskMillesime (C)
   (if (not (or (assoc 'annee *BF*) (assoc 'anneeMin *BF* )))
@@ -224,16 +225,16 @@
     )
   ;Le/Les année(s) on déja été renseignés, on vérifie avec la condition
   (progn 
-    (let ( YearOK NIL))
+    (let ((YearOK NIL))
     (if (assoc 'prix *BF*)
         (progn (if (= (cadr C) (cadr (assoc 'annee *BF*))) (setq YearOK T))
         )
-        (progn (if (AND (<= (cadr C) (cadr (assoc 'annee *BF*))) (<= (cadr C) (cadr (annnee 'annee *BF*))))
+        (progn (if (AND (<= (cadr C) (cadr (assoc 'anneeMax *BF*))) (>= (cadr C) (cadr (assoc 'anneeMin *BF*))))
                 (setq YearOK T))))
     YearOK)
     )
   )
-
+)
 
 (defun AskPetillant (C)
   (if (not (assoc 'petillant *BF*))
