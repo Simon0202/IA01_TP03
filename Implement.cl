@@ -190,7 +190,7 @@
     )
   ;Le/Les prix on déja été renseignés, on vérifie avec la condition
   (progn 
-    (let ( (PriceOK NIL))
+    (let ((PriceOK NIL))
     (if (assoc 'prix *BF*)
         (progn (if (= (cadr C) (cadr (assoc 'prix *BF*))) (setq PriceOK T))
         )
@@ -230,7 +230,28 @@
         (progn (if (AND (<= (cadr C) (cadr (assoc 'prix *BF*))) (<= (cadr C) (cadr (assoc 'prix *BF*))))
                 (setq PriceOK T))))
     PriceOK)
-    )
+  )
+)
+
+
+(defun AskBio (C)
+  (if (not (assoc 'bio *BF*))
+    (progn
+    (print "Vin Bio" )
+    (print "Voulez vous un vin bio:(oui/non)")
+      (if (eq (read) 'oui) 
+          (push (list 'bio "OUI") *BF*)
+        )
+          (push (list 'bio "NON") *BF*)
+        )
+    ;Bio est déjà renseigné
+    (progn 
+      (let ((BioOK NIL)) 
+        (if (= (cadr C) (cadr (assoc 'bio *BF*))) 
+          (setq BioOK T)
+        )
+      )
+    )BioOK
   )
 )
     
