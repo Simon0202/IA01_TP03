@@ -154,8 +154,8 @@
 (defun Verifier (C)
 (cond 
     ((equal (car C) 'prix) (AskPrice C)) ;Done
-    ((equal (car C) 'annee) (AskMillesime C))
-    ((equal (car C) 'petillant) (AskPetillant C))
+    ((equal (car C) 'annee) (AskMillesime C));Done
+    ((equal (car C) 'petillant) (AskPetillant C));Done
     ((equal (car C) 'bio) (AskBio C)) ;Done
     ((equal (car C) 'note) (AskNote C)) ;Done
     ((equal (car C) 'medaille) (AskMedaille C))
@@ -227,12 +227,36 @@
     (if (assoc 'prix *BF*)
         (progn (if (= (cadr C) (cadr (assoc 'annee *BF*))) (setq YearOK T))
         )
-        (progn (if (AND (<= (cadr C) (cadr (assoc 'prix *BF*))) (<= (cadr C) (cadr (assoc 'prix *BF*))))
-                (setq PriceOK T))))
-    PriceOK)
+        (progn (if (AND (<= (cadr C) (cadr (assoc 'annee *BF*))) (<= (cadr C) (cadr (annnee 'annee *BF*))))
+                (setq YearOK T))))
+    YearOK)
+    )
   )
 )
 
+(defun AskPetillant (C)
+  (if (not (assoc 'petillant *BF*))
+    (progn
+(print "Voulez vous un vin pétillant ?(oui/non):" )
+      (if (eq (read) 'oui) 
+        (progn
+          (push (list 'petillant "OUI") *BF*)
+          (AskPetillant C)
+          )
+        (progn
+          (push (list 'petillant "NON") *BF*)
+          (AskPetillant C)
+          )
+        )
+    )
+  ;Petillant déja renseigné
+  (progn 
+    (let (( PetillantOK NIL))
+     (if (equal (cadr C) (cadr (assoc 'petillant *BF*))) (setq PetillantOK T))
+    PetillantOK)
+    )
+  )
+)
 
 (defun AskBio (C)
   (if (not (assoc 'bio *BF*))
@@ -241,21 +265,24 @@
     (print "Voulez vous un vin bio:(oui/non)")
       (if (eq (read) 'oui) 
           (push (list 'bio "OUI") *BF*)
-        )
           (push (list 'bio "NON") *BF*)
         )
+     (Askbio C)
+     )
     ;Bio est déjà renseigné
     (progn 
       (let ((BioOK NIL)) 
-        (if (= (cadr C) (cadr (assoc 'bio *BF*))) 
+        (if (equal (cadr C) (cadr (assoc 'bio *BF*))) 
           (setq BioOK T)
         )
+        BioOK
       )
-    )BioOK
+    )
   )
 )
 
 
+<<<<<<< HEAD
 
 
 
@@ -283,5 +310,7 @@
   )
 )
 
+=======
+>>>>>>> 52f501cc2185b720470d945740681356ebef3519
     
 
