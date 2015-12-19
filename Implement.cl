@@ -158,7 +158,7 @@
     ((equal (car C) 'petillant) (AskPetillant C));Done
     ((equal (car C) 'bio) (AskBio C)) ;Done
     ((equal (car C) 'note) (AskNote C)) ;Done
-    ((equal (car C) 'medaille) (AskMedaille C))
+    ((equal (car C) 'medaille) (AskMedaille C));Done
     ((equal (car C) 'garde) (AskGarde C))
     (T)
 ))
@@ -313,6 +313,25 @@
   )
 )
 
-
-    
-
+(defun AskMedaille (C)
+  (if (not (assoc 'medaille *BF*))
+    (progn
+    (print "Voulez vous un vin médaillé:(oui/non)")
+      (if (eq (read) 'oui) 
+          (push (list 'medaille "OUI") *BF*)
+          (push (list 'medaille "NON") *BF*)
+        )
+     (AskMedaille C)
+     )
+    ;Medaille est déjà renseigné
+    (progn 
+       (let ((MedailleOK NIL)) 
+        (if (equal (cadr C) (cadr (assoc 'bio *BF*))) 
+          (setq MedailleOK T)
+        )
+        MedailleOK
+        )
+      
+      )
+    )
+  )
