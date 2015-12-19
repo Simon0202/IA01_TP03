@@ -128,6 +128,7 @@
 )
 
 (defun TrouveVin()
+  (setq *Resultat* NIL)
 	(InitBF) ; Initialisation de la base de faits
 	(loop for R in *BR* do (CheckR (eval R))
 ))
@@ -144,7 +145,7 @@
 )
 
 (defun addVin (vin)
-(push vin *BF*)
+(push vin *Resultat*)
 )
 ;Selon le type de la condition :
 ; -> Vérifie si cette derniére n'a pas déja été renseignée
@@ -290,7 +291,7 @@
     (progn
     (let ((entree 0))
     (print "Note du Vin" )
-    (print "Choisissez une note:(0/1/2/3)")
+    (print "Choisissez une note minimale:(0/1/2/3)")
     (setq entree (read))
       (cond
         ((= entree 0) (push (list 'note entree) *BF*))
@@ -305,7 +306,7 @@
     ;La note est déjà renseigné
     (progn 
       (let ((NoteOK NIL)) 
-        (if (= (cadr C) (cadr (assoc 'note *BF*)))
+        (if (>= (cadr C) (cadr (assoc 'note *BF*)))
           (setq NoteOK T)
         )
         NoteOK
