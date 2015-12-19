@@ -233,6 +233,7 @@
     )
   )
 )
+
 (defun AskPetillant (C)
   (if (not (assoc 'petillant *BF*))
     (progn
@@ -248,15 +249,12 @@
           )
         )
     )
-  ;Le/Les année(s) on déja été renseignés, on vérifie avec la condition
+  ;Petillant déja renseigné
   (progn 
     (let (( PetillantOK NIL))
-     (if (equal (cadr C) (cadr (assoc 'petillant *BF*))) (setq YearOK T))
-    YearOK)
+     (if (equal (cadr C) (cadr (assoc 'petillant *BF*))) (setq PetillantOK T))
+    PetillantOK)
     )
-        (progn (if (AND (<= (cadr C) (cadr (assoc 'prix *BF*))) (<= (cadr C) (cadr (assoc 'prix *BF*))))
-                (setq PriceOK T))))
-    PriceOK)
   )
 )
 
@@ -267,17 +265,19 @@
     (print "Voulez vous un vin bio:(oui/non)")
       (if (eq (read) 'oui) 
           (push (list 'bio "OUI") *BF*)
-        )
           (push (list 'bio "NON") *BF*)
         )
+     (Askbio C)
+     )
     ;Bio est déjà renseigné
     (progn 
       (let ((BioOK NIL)) 
-        (if (= (cadr C) (cadr (assoc 'bio *BF*))) 
+        (if (equal (cadr C) (cadr (assoc 'bio *BF*))) 
           (setq BioOK T)
         )
+        BioOK
       )
-    )BioOK
+    )
   )
 )
 
