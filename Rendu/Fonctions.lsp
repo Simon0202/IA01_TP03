@@ -1,8 +1,3 @@
-   ; INITIALISATION BASE DE RÉGLES
-
-(load "/Users/Desktop/IA01_TP03/Rendu/BaseVin.lsp")
-
-
 (defun InitBF ()
 
 	(setq *BF* NIL) ;Initialisation a NIL de notre base de faits
@@ -84,7 +79,7 @@
     ((equal (car C) 'note) (AskNote C)) ;Done
     ((equal (car C) 'medaille) (AskMedaille C));Done
     ((equal (car C) 'garde) (AskGarde C));Done
-    ((equal (car C) 'couleur) (VerfiCouleur C));Done
+    ((equal (car C) 'couleur) (VerifCouleur C));Done
     ((equal (car C) 'geographie ) (VerifGeographie C));Done
 
     (T)
