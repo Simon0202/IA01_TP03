@@ -4,8 +4,8 @@
   (let ((listeCouleur NIL)) 
 
   	;Demande de la couleur du vin a l'utilisateur
-	(print "Précision sur la/les couleur(s) du vin recherché(s) :")
-	(print "Le vin peut il être (Répondez par oui ou non) :")
+	(print "Precision sur la/les couleur(s) du vin recherche(s) :")
+	(print "Le vin peut il etre (Repondez par oui ou non) :")
 
     (print "Rouge ?:")
     (if (eq (read) 'oui) 
@@ -15,15 +15,20 @@
     (if (eq (read) 'oui) 
     	(push "BLANC" listeCouleur))
 
-    (print "Rosé ?:")
+    (print "Rose ?:")
     (if (eq (read) 'oui) 
     	(push "ROSE" listeCouleur))
 
+<<<<<<< HEAD:Rendu/Fonctions.lsp
     (push (list 'couleur listeCouleur) *BF*))
 
+=======
+    (push (cons 'couleur listeCouleur) *BF*)
+  )
+>>>>>>> cf61e23646853e9ccbca710541c41b45c5eac79b:Rendu/Fonctions.lisp
    (let ((listeGeographie NIL))
     (print "Concernant la provenance du Vin:")
-    (print "Le vin peut il provenir de (Répondez par oui ou non) :")
+    (print "Le vin peut il provenir de (Repondez par oui ou non) :")
 
 
     (print "Bourgogne ?:")
@@ -38,8 +43,13 @@
     (if (eq (read) 'oui) 
     	(push "CHAMPAGNE" listeGeographie))
 
+<<<<<<< HEAD:Rendu/Fonctions.lsp
      (push (list 'geographie listeGeographie) *BF*))
+=======
+     (push (cons 'geographie listeGeographie) *BF*)
+>>>>>>> cf61e23646853e9ccbca710541c41b45c5eac79b:Rendu/Fonctions.lisp
   
+  )
 )
 
 (defun TrouveVin()
@@ -52,7 +62,7 @@
 
 
 (defun CheckR (R)
-  (if (not (member (cadr R) *BF*))
+  (if (not (member (cadr R) *Resultat*))
     (let ((flag T) (Conditions (car R)))
       (loop for C in Conditions while (equal flag T) do
         (if (null (Verifier C)) (setq flag NIL))
@@ -65,22 +75,28 @@
 (push vin *Resultat*)
 )
 ;Selon le type de la condition :
-; -> Vérifie si cette derniére n'a pas déja été renseignée
-;       -> Si ce n'est pas le cas , demande à l'utilisateur des informations
-; La derniére condition est a T : dans un premier temps on ne demande pas le cépage, ni l'appellation
-;Si le nombre de résulat au final >20, on redemandera ces 2 informations
+; -> Verifie si cette derniere n'a pas deja ete renseignee
+;       -> Si ce n'est pas le cas , demande a l'utilisateur des informations
+; La derniere condition est a T : dans un premier temps on ne demande pas le cepage, ni l'appellation
+;Si le nombre de resulat au final >20, on redemandera ces 2 informations
 
 (defun Verifier (C)
 (cond 
     ((equal (car C) 'prix) (AskPrice C)) ;Done
     ((equal (car C) 'annee) (AskMillesime C));Done
+    ;((equal (car C) 'couleur) (VerifCouleur C));Done
     ((equal (car C) 'petillant) (AskPetillant C));Done
     ((equal (car C) 'bio) (AskBio C)) ;Done
     ((equal (car C) 'note) (AskNote C)) ;Done
     ((equal (car C) 'medaille) (AskMedaille C));Done
     ((equal (car C) 'garde) (AskGarde C));Done
+<<<<<<< HEAD:Rendu/Fonctions.lsp
     ;((equal (car C) 'couleur) (VerifCouleur C));Done
     ;((equal (car C) 'geographie ) (VerifGeographie C));Done
+=======
+    ;((equal (car C) 'geographie ) (VerifGeographie C));Done
+
+>>>>>>> cf61e23646853e9ccbca710541c41b45c5eac79b:Rendu/Fonctions.lisp
     (T)
 ))
 
@@ -93,23 +109,23 @@
   (if (not (or (assoc 'prix *BF*) (assoc 'prixMin *BF* )))
     (progn
 (print "Renseignement sur le prix" )
-(print "Souhaitez vous un prix précis (trés réstrictif) plûtot qu'une fourchette ?:(oui/non)")
+(print "Souhaitez vous un prix precis (tres restrictif) plûtot qu'une fourchette ?:(oui/non)")
       (if (eq (read) 'oui) 
         (progn
-          (print "Quel prix (€) ?:")
+          (print "Quel prix (en Euros)?:")
           (push (list 'prix (read)) *BF*)
           (AskPrice C)
           )
         (progn
-          (print "Quel prix Minimum (€) ?:")
+          (print "Quel prix Minimum (en Euros) ?:")
           (push (list 'prixMin (read)) *BF*)
-          (print "Quel prix Maximum (€) ?:")
+          (print "Quel prix Maximum (en Euros) ?:")
           (push (list 'prixMax (read)) *BF*)
           (AskPrice C)
           )
         )
     )
-  ;Le/Les prix on déja été renseignés, on vérifie avec la condition
+  ;Le/Les prix on deja ete renseignes, on verifie avec la condition
   (progn 
     (let ((PriceOK NIL))
     (if (assoc 'prix *BF*)
@@ -127,23 +143,23 @@
   (if (not (or (assoc 'annee *BF*) (assoc 'anneeMin *BF* )))
     (progn
 (print "Renseignement sur l'annee" )
-(print "Souhaitez vous une année précis (trés réstrictif) plûtot qu'une fourchette ?:(oui/non)")
+(print "Souhaitez vous une annee precis (tres restrictif) plûtot qu'une fourchette ?:(oui/non)")
       (if (eq (read) 'oui) 
         (progn
-          (print "Quelle année (format YYYY) ?:")
+          (print "Quelle annee (format YYYY) ?:")
           (push (list 'annee (read)) *BF*)
           (AskMillesime C)
           )
         (progn
-          (print "Quelle année Minimum (YYYY) ?:")
+          (print "Quelle annee Minimum (YYYY) ?:")
           (push (list 'anneeMin (read)) *BF*)
-          (print "Quel année Maximum (YYYY) ?:")
+          (print "Quel annee Maximum (YYYY) ?:")
           (push (list 'anneeMax (read)) *BF*)
           (AskMillesime C)
           )
         )
     )
-  ;Le/Les année(s) on déja été renseignés, on vérifie avec la condition
+  ;Le/Les annee(s) on deja ete renseignes, on verifie avec la condition
   (progn 
     (let ((YearOK NIL))
     (if (assoc 'annee *BF*)
@@ -159,7 +175,7 @@
 (defun AskPetillant (C)
   (if (not (assoc 'petillant *BF*))
     (progn
-(print "Voulez vous un vin pétillant ?(oui/non):" )
+      (print "Voulez vous un vin petillant ?(oui/non):" )
       (if (eq (read) 'oui) 
         (progn
           (push (list 'petillant "OUI") *BF*)
@@ -171,7 +187,7 @@
           )
         )
     )
-  ;Petillant déja renseigné
+  ;Petillant deja renseigne
   (progn 
     (let (( PetillantOK NIL))
      (if (equal (cadr C) (cadr (assoc 'petillant *BF*))) (setq PetillantOK T))
@@ -192,7 +208,7 @@
         )
      (Askbio C)
      )
-    ;Bio est déjà renseigné
+    ;Bio est deja renseigne
     (progn 
       (let ((BioOK NIL)) 
         (if (equal (cadr C) (cadr (assoc 'bio *BF*))) 
@@ -222,7 +238,7 @@
     (AskNote C)
     )
 
-    ;La note est déjà renseigné
+    ;La note est deja renseigne
     (progn 
       (let ((NoteOK NIL)) 
         (if (>= (cadr C) (cadr (assoc 'note *BF*)))
@@ -237,14 +253,14 @@
 (defun AskMedaille (C)
   (if (not (assoc 'medaille *BF*))
     (progn
-    (print "Voulez vous un vin médaillé:(oui/non)")
+    (print "Voulez vous un vin medaille:(oui/non)")
       (if (eq (read) 'oui) 
           (push (list 'medaille "OUI") *BF*)
           (push (list 'medaille "NON") *BF*)
         )
      (AskMedaille C)
      )
-    ;Medaille est déjà renseigné
+    ;Medaille est deja renseigne
     (progn 
        (let ((MedailleOK NIL)) 
         (if (equal (cadr C) (cadr (assoc 'medaille *BF*)))
@@ -266,7 +282,7 @@
     )
     (AskGarde C)
     )
-    ;La garde est déjà renseigné
+    ;La garde est deja renseigne
     (progn 
       (let ((GardeOk NIL)) 
         (if (equal (cadr C) (cadr (assoc 'garde *BF*)))
@@ -280,12 +296,19 @@
 )
 
 (defun VerifCouleur (C)
+<<<<<<< HEAD:Rendu/Fonctions.lsp
       (let ((CouleurOk NIL) (listeCouleur (cadr (assoc 'couleur *BF*))) )
         (loop for couleur in listeCouleur while(null CouleurOk) do
             (if (equal (cadr C) couleur) (setq CouleurOk T)))
         CouleurOk
+=======
+      (let ((CouleurOk NIL)(listeCouleur (cdr (assoc 'couleur *BF*))))
+        (if (member (cadr C) listeCouleur)(setq CouleurOk T))
+         CouleurOk
+>>>>>>> cf61e23646853e9ccbca710541c41b45c5eac79b:Rendu/Fonctions.lisp
       )
-) 
+)
+
 (defun VerifGeographie (C)
       (let ((GeographieOk NIL) (listeGeo (cadr (assoc 'geographie *BF*))) )
         (loop for geo in listeGeo while(null GeographieOk) do
@@ -300,7 +323,7 @@
       (if (equal NameVinRes (?nom vin))
         (progn
           (format t "Nom du Vin: ~a" (?nom vin))
-          (format t "~%Caractéristiques:~%Prix:~a"(?prix vin))
+          (format t "~%Caracteristiques:~%Prix:~a"(?prix vin))
           (format t " Annee:~a"(?annee vin))
           (format t " Note:~a"(?note vin))
           (format t " Couleur:~a"(?couleur vin))
