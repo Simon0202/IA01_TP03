@@ -93,7 +93,7 @@
   (if (not (or (assoc 'prix *BF*) (assoc 'prixMin *BF* )))
     (progn
 (print "Renseignement sur le prix" )
-(print "Souhaitez vous un prix precis (tres restrictif) plûtot qu'une fourchette ?:(oui/non)")
+(print "Souhaitez vous un prix precis (tres restrictif) plutot qu'une fourchette ?:(oui/non)")
       (if (eq (read) 'oui) 
         (progn
           (print "Quel prix (en Euros)?:")
@@ -127,7 +127,7 @@
   (if (not (or (assoc 'annee *BF*) (assoc 'anneeMin *BF* )))
     (progn
 (print "Renseignement sur l'annee" )
-(print "Souhaitez vous une annee precis (tres restrictif) plûtot qu'une fourchette ?:(oui/non)")
+(print "Souhaitez vous une annee precis (tres restrictif) plutot qu'une fourchette ?:(oui/non)")
       (if (eq (read) 'oui) 
         (progn
           (print "Quelle annee (format YYYY) ?:")
