@@ -19,13 +19,8 @@
     (if (eq (read) 'oui) 
     	(push "ROSE" listeCouleur))
 
-<<<<<<< HEAD:Rendu/Fonctions.lsp
     (push (list 'couleur listeCouleur) *BF*))
 
-=======
-    (push (cons 'couleur listeCouleur) *BF*)
-  )
->>>>>>> cf61e23646853e9ccbca710541c41b45c5eac79b:Rendu/Fonctions.lisp
    (let ((listeGeographie NIL))
     (print "Concernant la provenance du Vin:")
     (print "Le vin peut il provenir de (Repondez par oui ou non) :")
@@ -42,15 +37,10 @@
     (print "Champagne ?:")
     (if (eq (read) 'oui) 
     	(push "CHAMPAGNE" listeGeographie))
-
-<<<<<<< HEAD:Rendu/Fonctions.lsp
      (push (list 'geographie listeGeographie) *BF*))
-=======
-     (push (cons 'geographie listeGeographie) *BF*)
->>>>>>> cf61e23646853e9ccbca710541c41b45c5eac79b:Rendu/Fonctions.lisp
+
   
   )
-)
 
 (defun TrouveVin()
   (setq *Resultat* NIL)
@@ -84,19 +74,13 @@
 (cond 
     ((equal (car C) 'prix) (AskPrice C)) ;Done
     ((equal (car C) 'annee) (AskMillesime C));Done
-    ;((equal (car C) 'couleur) (VerifCouleur C));Done
     ((equal (car C) 'petillant) (AskPetillant C));Done
     ((equal (car C) 'bio) (AskBio C)) ;Done
     ((equal (car C) 'note) (AskNote C)) ;Done
     ((equal (car C) 'medaille) (AskMedaille C));Done
     ((equal (car C) 'garde) (AskGarde C));Done
-<<<<<<< HEAD:Rendu/Fonctions.lsp
-    ;((equal (car C) 'couleur) (VerifCouleur C));Done
-    ;((equal (car C) 'geographie ) (VerifGeographie C));Done
-=======
-    ;((equal (car C) 'geographie ) (VerifGeographie C));Done
-
->>>>>>> cf61e23646853e9ccbca710541c41b45c5eac79b:Rendu/Fonctions.lisp
+    ((equal (car C) 'couleur) (VerifCouleur C));Done
+    ((equal (car C) 'geographie) (VerifGeographie C));Done
     (T)
 ))
 
@@ -296,18 +280,12 @@
 )
 
 (defun VerifCouleur (C)
-<<<<<<< HEAD:Rendu/Fonctions.lsp
       (let ((CouleurOk NIL) (listeCouleur (cadr (assoc 'couleur *BF*))) )
         (loop for couleur in listeCouleur while(null CouleurOk) do
             (if (equal (cadr C) couleur) (setq CouleurOk T)))
         CouleurOk
-=======
-      (let ((CouleurOk NIL)(listeCouleur (cdr (assoc 'couleur *BF*))))
-        (if (member (cadr C) listeCouleur)(setq CouleurOk T))
-         CouleurOk
->>>>>>> cf61e23646853e9ccbca710541c41b45c5eac79b:Rendu/Fonctions.lisp
       )
-)
+) 
 
 (defun VerifGeographie (C)
       (let ((GeographieOk NIL) (listeGeo (cadr (assoc 'geographie *BF*))) )
