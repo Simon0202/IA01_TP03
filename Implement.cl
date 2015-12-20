@@ -84,7 +84,7 @@
     ((equal (car C) 'note) (AskNote C)) ;Done
     ((equal (car C) 'medaille) (AskMedaille C));Done
     ((equal (car C) 'garde) (AskGarde C));Done
-    ((equal (car C) 'couleur) (VerfiCouleur C));Done
+    ((equal (car C) 'couleur) (VerifCouleur C));Done
     ((equal (car C) 'geographie ) (VerifGeographie C));Done
 
     (T)

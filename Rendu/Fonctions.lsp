@@ -19,7 +19,7 @@
     (if (eq (read) 'oui) 
     	(push "ROSE" listeCouleur))
 
-    (push (cons 'couleur listeCouleur) *BF*))
+    (push (list 'couleur listeCouleur) *BF*))
 
    (let ((listeGeographie NIL))
     (print "Concernant la provenance du Vin:")
@@ -38,7 +38,7 @@
     (if (eq (read) 'oui) 
     	(push "CHAMPAGNE" listeGeographie))
 
-     (push (cons 'geographie listeGeographie) *BF*))
+     (push (list 'geographie listeGeographie) *BF*))
   
 )
 
@@ -79,9 +79,8 @@
     ((equal (car C) 'note) (AskNote C)) ;Done
     ((equal (car C) 'medaille) (AskMedaille C));Done
     ((equal (car C) 'garde) (AskGarde C));Done
-    ((equal (car C) 'couleur) (VerifCouleur C));Done
-    ((equal (car C) 'geographie ) (VerifGeographie C));Done
-
+    ;((equal (car C) 'couleur) (VerifCouleur C));Done
+    ;((equal (car C) 'geographie ) (VerifGeographie C));Done
     (T)
 ))
 
@@ -281,19 +280,19 @@
 )
 
 (defun VerifCouleur (C)
-      (let ((CouleurOk NIL) (listeCouleur (cdr (assoc 'couleur *BF*))) )
-        (if (member (cadr C) listeCouleur)(setq CouleurOk T))
-
+      (let ((CouleurOk NIL) (listeCouleur (cadr (assoc 'couleur *BF*))) )
+        (loop for couleur in listeCouleur while(null CouleurOk) do
+            (if (equal (cadr C) couleur) (setq CouleurOk T)))
         CouleurOk
       )
 ) 
 (defun VerifGeographie (C)
-      (let ((GeographieOk NIL) (listeGeographie (cdr (assoc 'geographie *BF*))) )
-        (if (member (cadr C) listeGeographie)(setq GeographieOk T))
-
+      (let ((GeographieOk NIL) (listeGeo (cadr (assoc 'geographie *BF*))) )
+        (loop for geo in listeGeo while(null GeographieOk) do
+            (if (equal (cadr C) geo) (setq GeographieOk T)))
         GeographieOk
       )
-) 
+)
 
 (defun Affichage(result)
   (loop for NameVinRes in result do
